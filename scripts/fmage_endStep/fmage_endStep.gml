@@ -46,6 +46,7 @@ if(hit && !shielded && !invincible){
     squash_stretch(1.5,1.5);      
     god.shakeDur = 5;
 	god.shake  = true;
+	god.freezeDur = hitBy.hitStun/5;
 	god.freeze = true;
     y --;
     xSpeed = hitBy.xHit + ((sign(hitBy.xHit)*percentage)/10);

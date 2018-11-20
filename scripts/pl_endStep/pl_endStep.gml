@@ -26,10 +26,10 @@ switch(currentState){
 
 //hit
 if(hit){
-    squash_stretch(1.5,1.5);
-    weaponSprite = sprEmpty;       
-    god.shakeDur = 5;
+    squash_stretch(1.5,1.5);   
+    god.shakeDur = 10;
 	god.shake  = true;
+	god.freezeDur = 200;//hitBy.hitStun/2;
 	god.freeze = true;
     y --;
     xSpeed = hitBy.xHit;

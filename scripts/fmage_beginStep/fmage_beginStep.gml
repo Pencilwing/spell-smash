@@ -24,7 +24,6 @@ if(place_meeting(x,y,parentBounds)){
 	percentage = 0;
 	state_reset();
 	dead = true;
-	show_debug_message("shit")
 	
 }
 
