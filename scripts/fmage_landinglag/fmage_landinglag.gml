@@ -2,6 +2,7 @@
 if(onGround && !landed){
     if(currentFrame >= 0){
         state_change(states.recovery);
+		angle = 0
     }else{
         state_reset();  
     }

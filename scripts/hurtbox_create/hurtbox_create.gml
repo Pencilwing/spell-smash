@@ -8,9 +8,9 @@
 //create the hurtbox object, assign the owner to the creator, set offset and scale
 _hurtbox = instance_create(x + argument0, y + argument1, oHurtbox);
 _hurtbox.owner = id;
-_hurtbox.xOffset = argument0 * global.sizeMultiplier;
-_hurtbox.yOffset = argument1 * global.sizeMultiplier;
-_hurtbox.xScale  = argument2 * global.sizeMultiplier;
-_hurtbox.yScale  = argument3 * global.sizeMultiplier;
+_hurtbox.xOffset = argument0 ;
+_hurtbox.yOffset = argument1 ;
+_hurtbox.xScale  = argument2 / 100;
+_hurtbox.yScale  = argument3 / 100;
 
 return _hurtbox;

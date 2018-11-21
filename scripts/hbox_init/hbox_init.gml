@@ -1,5 +1,5 @@
 //initialize a bunch of hitbox and hurtbox info
-hurtbox = hurtbox_create(-6 * facing,-22,12,22); //create and store hurtbox
+hurtbox = hurtbox_create(-35 * facing,-200,70,200); //create and store hurtbox
 hitbox  = -1; //default hitbox variable
 
 dur     = 0; //number of frames the hitbox is active

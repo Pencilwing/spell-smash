@@ -41,6 +41,20 @@ switch(subState){
 			upB=true;
 			xSpeed = xDirection;
 			ySpeed = yDirection;
+			/*if(xDirection == 0 || yDirection == 0){
+				if(xDirection == 0 && yDirection == -1){
+				angle = 180	
+				}
+				if(xDirection == 1 && yDirection == 0){
+				angle = -90	
+				}
+				if(xDirection == -1 && yDirection == 0){
+				angle = 90	
+				}
+			}else{*/
+			angle = (point_direction(0,0,xDirection,yDirection))-90;
+			show_debug_message(angle)
+			facing = -1*sign(angle)
 		 }
 		if(upB){			
 			xSpeed = 10*xDirection

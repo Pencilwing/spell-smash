@@ -27,6 +27,7 @@ if(animation_end()){
 	upB = false;
 	currentState = states.specialFall;
 	gSpeed = gSpeedDefault;
+	angle = 0;
 	}else{
 	state_reset();  
 	}

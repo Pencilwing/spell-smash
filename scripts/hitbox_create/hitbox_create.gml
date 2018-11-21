@@ -15,8 +15,8 @@ _hitbox = instance_create(x + argument0, y + argument1, oHitbox);
 _hitbox.owner = id;
 _hitbox.xOffset = argument0;
 _hitbox.yOffset = argument1;
-_hitbox.xScale  = argument2;
-_hitbox.yScale  = argument3;
+_hitbox.xScale  = argument2 / 100;
+_hitbox.yScale  = argument3 / 100;
 
 //the rest of the stats an attack needs
 _hitbox.dur     = argument4; //number of frames the hitbox is active

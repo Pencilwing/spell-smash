@@ -42,15 +42,13 @@ switch(currentState){
             }
         //in air animation
         }else{
-            animation_set(fd_fmage_jump,spr_fireMage_jump);
-            /*change sprite frame based on vertical speed
+            
             if(ySpeed < 1){
-                currentFrame = 0;
+				animation_set(fd_fmage_jump,spr_fireMage_jump);
             }else{
-                currentFrame = 1;
-            }*/
+                animation_set(fd_fmage_jump,spr_fireMage_fall);
         }
-        
+		}
         //change facing direction based on left/right. 
         //facing flips the sprite to the left and right.
         if(left && onGround){

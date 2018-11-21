@@ -1,6 +1,8 @@
 /// @description movement
 mSpeed = mSpeedDefault;
 sideBDash = false;
+angle = 0;
+upB = false;
 
 //move left and right
 if(left){
