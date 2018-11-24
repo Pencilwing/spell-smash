@@ -22,15 +22,14 @@ switch(subState){
     break;
 	
 	case attacks.up_light:
-        if(frame_check(1,0)){
-			hitbox_create(70*facing,-200,50*facing,200,15,0*facing,-18,20,10);
-            hitbox_create(-150*facing,-250,200*facing,50,15,0*facing,-18,20,10);
+        if(frame_check(6,0)){
+            hitbox_create(-150*facing,-250,250*facing,150,7,0*facing,-18,20,10);
 		}
     break;
 	
 	case attacks.down_light:
-        if(frame_check(1,0)){
-            hitbox_create(100*facing,-50,100*facing,50,15,3*facing,-20,20,10);
+        if(frame_check(4,0)){
+            hitbox_create(30*facing,-50,150*facing,50,4,3*facing,-20,20,10);
 		}
     break;
 }

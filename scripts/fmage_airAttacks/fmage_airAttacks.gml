@@ -2,7 +2,7 @@
 switch(subState){    
     case attacks.neutral_air:
 		if(frame_check(3,0)){
-            hitbox_create(-75*facing,-200,150*facing,150,26,1*facing,-2,20,5);
+            hitbox_create(-75*facing,-220,150*facing,150,26,15*facing,-5,20,5);
         }
     break;
 	

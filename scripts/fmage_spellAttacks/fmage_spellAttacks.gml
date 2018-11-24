@@ -57,8 +57,8 @@ switch(subState){
 			facing = -1*sign(angle)
 		 }
 		if(upB){			
-			xSpeed = 10*xDirection
-			ySpeed = 10*yDirection
+			xSpeed = 15*xDirection
+			ySpeed = 15*yDirection
 			}
 		
     break;
