@@ -1,20 +1,17 @@
-
-if(player == 0){
 	
-    leftHold  = left;
-    rightHold = right;
-    upHold    = up;
-    downHold  = down;
-	
+leftHold  = left;
+rightHold = right;
+upHold    = up;
+downHold  = down;
 	
 p1Spawn.x = oPlayer1.initialX
 p1Spawn.y = oPlayer1.initialY
     
 //buttons
-if(gamepad_is_connected(0)){
+if(gamepad_is_connected(player)){
 	
-	xAxis = gamepad_axis_value(0, gp_axislh);
-	yAxis = gamepad_axis_value(0, gp_axislv);
+	xAxis = gamepad_axis_value(player, gp_axislh);
+	yAxis = gamepad_axis_value(player, gp_axislv);
 	
 	if(xAxis <= -0.4)
 	{
@@ -45,24 +42,27 @@ if(gamepad_is_connected(0)){
 	}
     
     jumpHold = jump;
-    jump = gamepad_button_check(0, gp_face4);
+    jump = gamepad_button_check(player, gp_face4);
 
     dashHold = dash;
-    dash = gamepad_button_check(0, gp_shoulderrb);
+    dash = gamepad_button_check(player, gp_shoulderrb);
     
     shieldHold = shield;
-    shield = gamepad_button_check(0, gp_shoulderr);
+    shield = gamepad_button_check(player, gp_shoulderr);
     
     attackHold = attack;
-    attack = gamepad_button_check(0, gp_face2);
+    attack = gamepad_button_check(player, gp_face2);
 	
     heavyHold = heavy;
-    heavy = gamepad_button_check(0, gp_face3);
+    heavy = gamepad_button_check(player, gp_face3);
 	
 	spellHold = spell;
-	spell = gamepad_button_check(0, gp_face1);
+	spell = gamepad_button_check(player, gp_face1);
 	
 }else{
+	
+	if(player == 0){
+	
 	left  = keyboard_check(ord("A"));
     right = keyboard_check(ord("D"));
     up    = keyboard_check(ord("W"));
@@ -85,89 +85,14 @@ if(gamepad_is_connected(0)){
 	
 	spellHold = spell;
 	spell = keyboard_check(ord("K"))
-	
-	 if(!left && !right){
-			xAxis = 0;
-	}else{if(left){
-			xAxis = -1;
-		}if(right){
-			xAxis = 1;
-		}
-	}
-	
-    if(!up && !down){
-			yAxis = 0;
-	}else{if(up){
-			yAxis = -1;
-		}if(down){
-			yAxis = 1;
-		}
-	}
-	}
-}
 
-if(player == 1){
-	
-    leftHold  = left;
-    rightHold = right;
-    upHold    = up;
-    downHold  = down;
-	
-	
-p2Spawn.x = oPlayer2.initialX
-p2Spawn.y = oPlayer2.initialY
+	}else{
 
-if(gamepad_is_connected(1)){
+	if(player == 1){
 	
-	xAxis = gamepad_axis_value(1, gp_axislh);
-	yAxis = gamepad_axis_value(1, gp_axislv);
 	
-	if(xAxis <= -0.4)
-	{
-	left = true
-	}else{
-	left = false
-	}
-	
-	if(xAxis >= 0.4)
-	{
-	right = true
-	}else{
-	right = false
-	}
-	
-	if(yAxis <= -0.4)
-	{
-	up = true
-	}else{
-	up = false
-	}
-	
-	if(yAxis >= 0.4)
-	{
-	down = true
-	}else{
-	down = false
-	}
-    
-    jumpHold = jump;
-    jump = gamepad_button_check(1, gp_face4);
-
-    dashHold = dash;
-    dash = gamepad_button_check(1, gp_shoulderrb);
-    
-    shieldHold = shield;
-    shield = gamepad_button_check(1, gp_shoulderr);
-    
-    attackHold = attack;
-    attack = gamepad_button_check(1, gp_face2);
-	
-    heavyHold = heavy;
-    heavy = gamepad_button_check(1, gp_face3);
-	
-	spellHold = spell;
-	spell = gamepad_button_check(1, gp_face1);
-}else{
+	p2Spawn.x = oPlayer2.initialX
+	p2Spawn.y = oPlayer2.initialY
     
     left  = keyboard_check(vk_left);
     right = keyboard_check(vk_right);
@@ -194,4 +119,24 @@ if(gamepad_is_connected(1)){
 	
 }
 
+	
+	 if(!left && !right){
+			xAxis = 0;
+	}else{if(left){
+			xAxis = -1;
+		}if(right){
+			xAxis = 1;
+		}
+	}
+	
+    if(!up && !down){
+			yAxis = 0;
+	}else{if(up){
+			yAxis = -1;
+		}if(down){
+			yAxis = 1;
+		}
+	}
+
+	}
 }

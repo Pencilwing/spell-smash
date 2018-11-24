@@ -9,13 +9,38 @@ switch(subState){
 	case attacks.front_air:
         if(frame_check(15,0)){
             hitbox_create(120*facing,0,150*facing,100,15,10*facing,10,20,10);
-		}
+			xSpeed = 0;
+			ySpeed = 0;
+			y = y - 2
+			gSpeed = 0;
+			xSpeed = -24*facing
+			ySpeed = -20
+			
+		    sideBDash = true;
+			}
+			if(sideBDash){
+				xSpeed = lerp(xSpeed,0,0.08);
+				gSpeed = gSpeedDefault;
+			}
+			
     break;
 	
 	case attacks.back_air:
         if(frame_check(15,0)){
             hitbox_create(-280*facing,0,150*facing,100,15,-10*facing,-10,20,10);
-		}
+						xSpeed = 0;
+			ySpeed = 0;
+			y = y - 2
+			gSpeed = 0;
+			xSpeed = 24*facing
+			ySpeed = -20
+			
+		    sideBDash = true;
+			}
+			if(sideBDash){
+				xSpeed = lerp(xSpeed,0,0.08);
+				gSpeed = gSpeedDefault;
+			}
     break;
 	
 	case attacks.up_air:

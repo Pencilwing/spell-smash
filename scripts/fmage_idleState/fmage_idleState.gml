@@ -49,8 +49,8 @@ if(shield && !shieldHold && !onGround){
 		currentState = states.airDodge;
 		dashDur = dashDurMax;
 		gSpeed = 0;
-        xSpeed = 17* xAxis;
-		ySpeed = 17 * yAxis;
+        xSpeed = 22 * xAxis;
+		ySpeed = 22 * yAxis;
         squash_stretch(1.3,0.7);
 }
 
