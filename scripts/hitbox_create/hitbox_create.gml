@@ -24,5 +24,6 @@ _hitbox.xHit    = argument5; //horizontal knock back
 _hitbox.yHit    = argument6; //vertical knock back
 _hitbox.hitStun = argument7; //hit stun duration
 _hitbox.damage  = argument8; //damage dealt
+_hitbox.growth  = argument9; //knockback growth
 
 hitbox = _hitbox;

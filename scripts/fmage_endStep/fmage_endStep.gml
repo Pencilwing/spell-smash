@@ -49,8 +49,9 @@ if(hit && !shielded && !invincible){
 	god.freezeDur = hitBy.hitStun/5;
 	god.freeze = true;
     y --;
-    xSpeed = hitBy.xHit + ((sign(hitBy.xHit)*percentage)/10);
-    ySpeed = hitBy.yHit + ((sign(hitBy.yHit)*percentage)/10);
+    xSpeed = hitBy.xHit + ((sign(hitBy.xHit)*percentage)/5);
+    ySpeed = hitBy.yHit + ((sign(hitBy.yHit)*percentage)/5);
+	gSpeed = 0;
     if(sign(hitBy.xHit) * -1 = 0){
 			facing = 1	
 			}else{

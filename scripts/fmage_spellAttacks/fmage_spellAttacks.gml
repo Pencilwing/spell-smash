@@ -9,6 +9,7 @@ switch(subState){
 	
 	case attacks.side_spell:
         if(frame_check(14,0)){
+			hitbox_create(50*facing,-150,200*facing,70,3,3*facing,-5,20,5);
 			xSpeed = 0;
 			ySpeed = 0;
 			y = y - 2
@@ -41,9 +42,9 @@ switch(subState){
 			upB=true;
 			xSpeed = xDirection;
 			ySpeed = yDirection;
-			/*if(xDirection == 0 || yDirection == 0){
+			if(xDirection == 0 || yDirection == 0){
 				if(xDirection == 0 && yDirection == -1){
-				angle = 180	
+				angle = 1	
 				}
 				if(xDirection == 1 && yDirection == 0){
 				angle = -90	
@@ -51,10 +52,11 @@ switch(subState){
 				if(xDirection == -1 && yDirection == 0){
 				angle = 90	
 				}
-			}else{*/
+			}else{
 			angle = (point_direction(0,0,xDirection,yDirection))-90;
-			show_debug_message(angle)
 			facing = -1*sign(angle)
+			}
+			hitbox_create(50*facing,-150,200*facing,70,3,3*facing,-5,20,5);
 		 }
 		if(upB){			
 			xSpeed = 15*xDirection

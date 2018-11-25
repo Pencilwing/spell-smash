@@ -9,5 +9,4 @@ if(left){
 
 if(onGround){
 	state_reset();
-	show_debug_message("landed");
 }

@@ -7,4 +7,5 @@ xHit    = 0; //horizontal knock back
 yHit    = 0; //vertical knock back
 hitStun = 0; //hit stun duration
 damage  = 0; //damage dealt
+growth  = 0; //knockback growth
 invincible = false; //what it sounds like
