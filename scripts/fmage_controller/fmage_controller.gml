@@ -118,7 +118,7 @@ if(gamepad_is_connected(player)){
 	spell = keyboard_check(vk_numpad3);
 	
 }
-
+	}
 	
 	 if(!left && !right){
 			xAxis = 0;
@@ -136,7 +136,5 @@ if(gamepad_is_connected(player)){
 		}if(down){
 			yAxis = 1;
 		}
-	}
-
 	}
 }
