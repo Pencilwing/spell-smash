@@ -35,7 +35,7 @@ switch(currentState){
                     animation_set(fd_fmage_idle,spr_fireMage_idle);
                 }
             //run
-            }else{if(!jumpHold)
+            }else{if(!jumping)
 				{
 				   animation_set(fd_fmage_run,spr_fireMage_run);
 				}		
@@ -45,8 +45,10 @@ switch(currentState){
             
             if(ySpeed < 1){
 				animation_set(fd_fmage_jump,spr_fireMage_jump);
+				jumping = false;
             }else{
                 animation_set(fd_fmage_jump,spr_fireMage_fall);
+				
         }
 		}
         //change facing direction based on left/right. 

@@ -1,7 +1,4 @@
 //inherit from parent object
-
-
-
 event_inherited();
 
 landed = 0;
@@ -57,9 +54,13 @@ aSpeed = 0.5* global.sizeMultiplier;
 aSpeedDefault = aSpeed;
 cSpeed = 1 * global.sizeMultiplier;
 tSpeed = 50 * global.sizeMultiplier;
+shPower = -2.25 * global.sizeMultiplier;
 jPower = -4.5 * global.sizeMultiplier;
 facing = 1;
 doubleJump = false
+jumping = false
+jumpAnimFix = 2
+weight = 50
 
 gSpeedDefault = gSpeed;
 

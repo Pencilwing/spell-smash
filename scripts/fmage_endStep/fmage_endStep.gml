@@ -49,18 +49,17 @@ if(hit && !shielded && !invincible){
 	god.freezeDur = hitBy.hitStun/5;
 	god.freeze = true;
     y --;
-    xSpeed = hitBy.xHit + ((sign(hitBy.xHit)*percentage)/5);
-    ySpeed = hitBy.yHit + ((sign(hitBy.yHit)*percentage)/5);
-	gSpeed = 0;
+	var vectorArray = vectorCalc(knockbackCalc(percentage,hitBy.damage,weight,hitBy.growth,hitBy.kbStr,1),hitBy.kbAng)
+    xSpeed = vectorArray [1]
+    ySpeed = vectorArray [0]
     if(sign(hitBy.xHit) * -1 = 0){
 			facing = 1	
 			}else{
 			facing = sign(hitBy.xHit) * -1
 			}
 	percentage = percentage + hitBy.damage;
-	show_debug_message(percentage);
     depth  = hitBy.depth;
-    hitStun = hitBy.hitStun;
+    hitStun = hitBy.kbStr;
     currentState = states.hitstun;
     hit = false;
 }

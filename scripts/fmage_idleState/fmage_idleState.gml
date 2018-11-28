@@ -4,15 +4,16 @@ sideBDash = false;
 angle = 0;
 upB = false;
 
+
 //move left and right
 if(left){
     xSpeed = approach(xSpeed,-mSpeed,aSpeed * god.gameSpeed);
 }else if(right){
     xSpeed = approach(xSpeed,mSpeed,aSpeed * god.gameSpeed);
 }else if (onGround){
-    xSpeed = lerp(xSpeed,0,0.15);
+    xSpeed = approach(xSpeed,0,1);
 }else{
-	xSpeed = lerp(xSpeed,0,0.1)	
+	xSpeed = approach(xSpeed,0,0.1)	
 }
 
 //jump if you are on the ground and not holding the jump button

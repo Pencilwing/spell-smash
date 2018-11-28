@@ -2,7 +2,7 @@
 
 
 if(!onGround){
-    ySpeed += gSpeed * god.gameSpeed * global.sizeMultiplier;
+    ySpeed += gSpeed * god.gameSpeed;
 }
 
 

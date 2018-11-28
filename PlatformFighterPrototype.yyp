@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "0cb229df-9db2-4fd9-ae24-a2c2bd3e7f35",
+            "Value": {
+                "id": "d5f0dbd2-5761-490a-9c30-f6f2b8160876",
+                "resourcePath": "scripts\\vectorCalc\\vectorCalc.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0cb6f0ab-b8bb-474f-aa41-23f9fbc41c1f",
             "Value": {
                 "id": "5b049659-8b35-40f3-bbc7-3c1f9cfa91a7",
@@ -1743,6 +1751,14 @@
             }
         },
         {
+            "Key": "d0b7a0d2-c08e-46ce-913c-861cef82e63f",
+            "Value": {
+                "id": "66788da1-a309-4a1c-82db-359f4e555a7f",
+                "resourcePath": "scripts\\knockbackCalc\\knockbackCalc.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d1f6e214-3c1d-484b-8c8e-e88f610e9c16",
             "Value": {
                 "id": "101ea8aa-d4a2-4f2e-942b-32c50d27ab4d",
@@ -2209,7 +2225,9 @@
         "abb70b66-feab-4289-9d76-c1ba6f251e48",
         "097462f1-8ea9-4fa1-99ec-3f780517db20",
         "0afacf2c-ff86-43f5-978b-bb7541635377",
+        "0cb229df-9db2-4fd9-ae24-a2c2bd3e7f35",
         "bb19bb56-a22f-45bb-8374-495daebea926",
+        "d0b7a0d2-c08e-46ce-913c-861cef82e63f",
         "dc3541b7-f392-4e6a-be39-81ca484d1925",
         "387187fb-708e-4bfe-a087-1310e3ebb008",
         "aaacd921-5b06-47cc-8c80-ddcb547d89b0",

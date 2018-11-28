@@ -3,7 +3,6 @@ if(onGround){
     xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
 }else{
     xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
-	ySpeed = approach(ySpeed,0,0.1 * god.gameSpeed);
 }
 
 //count down your hitStun until it reaches 0

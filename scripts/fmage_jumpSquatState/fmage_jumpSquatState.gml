@@ -1,10 +1,24 @@
-		xSpeed = lerp(xSpeed,0,0.1);
+xSpeed = lerp(xSpeed,0,0.1);
+
+
 if(!jumpHold ){
-		ySpeed = jPower/2;
-		state_reset();
+		ySpeed = shPower;
+		jumping = true;
 }
 
 if(animation_end()){
         ySpeed = jPower;
-		state_reset();
+		jumping = true;
 }
+
+if(jumping)
+{
+	jumpAnimFix --;
+	if(jumpAnimFix <= 0)
+	{
+		jumpAnimFix = 2;
+		jumping = false;
+		state_reset();
+	}
+}
+
