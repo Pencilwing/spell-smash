@@ -61,6 +61,7 @@ doubleJump = false
 jumping = false
 jumpAnimFix = 2
 weight = 50
+hitstunState = false
 
 gSpeedDefault = gSpeed;
 

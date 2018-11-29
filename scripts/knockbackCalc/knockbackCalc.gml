@@ -7,6 +7,6 @@
 /// @param kbStrength
 /// @param miscFactors
 
-kbFinal = ((((((argument0/10 + argument0*argument1/20)*200/(argument2 + 100)*1.4)+18)*argument3)+argument4)*argument5)
+kbFinal = (((((argument0/40 + argument0*argument1/50)*200/(argument2 + 100)+10)*argument3)+argument4)*argument5)
 
 return kbFinal

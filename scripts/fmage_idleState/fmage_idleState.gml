@@ -3,6 +3,7 @@ mSpeed = mSpeedDefault;
 sideBDash = false;
 angle = 0;
 upB = false;
+hitstunState = false;
 
 
 //move left and right

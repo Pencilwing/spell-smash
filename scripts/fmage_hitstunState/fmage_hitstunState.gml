@@ -1,3 +1,5 @@
+hitstunState = true;
+
 //slow horizontal speed
 if(onGround){
     xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
