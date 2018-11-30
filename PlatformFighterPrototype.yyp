@@ -1015,6 +1015,14 @@
             }
         },
         {
+            "Key": "7281998f-a5aa-464e-a7f5-71a48c769331",
+            "Value": {
+                "id": "524d6c27-d675-4857-bdee-ca57c3dcb627",
+                "resourcePath": "views\\7281998f-a5aa-464e-a7f5-71a48c769331.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "732dc274-f32f-47f1-8b97-081d26317f73",
             "Value": {
                 "id": "af0ed780-c0a4-47a2-8589-8de03997395f",
@@ -1212,6 +1220,14 @@
                 "id": "30c98884-b01a-4556-a3e3-31dc799bde5a",
                 "resourcePath": "views\\88b17f41-fa77-4ecb-b147-18b190d61d24.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "891c95c4-6e0e-4a0a-a220-099d88cf3aef",
+            "Value": {
+                "id": "8a9d6eb8-382a-4bc9-9bb0-5fc0d4c58312",
+                "resourcePath": "sprites\\doubleJumpFX\\doubleJumpFX.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1580,6 +1596,14 @@
                 "id": "b2d680f1-a81c-433e-a52b-9427daad1aa6",
                 "resourcePath": "sprites\\sprPlayer_Idle_Base\\sprPlayer_Idle_Base.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b4d1d2f5-1e69-4d87-b80b-98db300e74ae",
+            "Value": {
+                "id": "fd967820-9903-4152-ae52-a735b0d637ed",
+                "resourcePath": "objects\\oDoubleJumpFX\\oDoubleJumpFX.yy",
+                "resourceType": "GMObject"
             }
         },
         {
