@@ -27,6 +27,7 @@ if(onGround){
 if(!onGround && !doubleJump){
     if(jump && !jumpHold){
         ySpeed = jPower;
+		instance_create(x,y,oDoubleJumpFX)
         squash_stretch(0.7,1.3);
 		doubleJump = true;
     }
