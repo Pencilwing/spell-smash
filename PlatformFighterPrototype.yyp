@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "73f1d857-b4b6-436a-8f4f-dbdcf0e8d043",
+            "Value": {
+                "id": "f0f713be-5c86-4411-b53c-eef8dd0bf64f",
+                "resourcePath": "scripts\\play_soundFX\\play_soundFX.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7415ca94-83eb-472b-88df-06d812453848",
             "Value": {
                 "id": "93e7659b-70c3-4a83-bf6e-3c036c8b8215",
@@ -2327,6 +2335,7 @@
         "dc3541b7-f392-4e6a-be39-81ca484d1925",
         "387187fb-708e-4bfe-a087-1310e3ebb008",
         "aaacd921-5b06-47cc-8c80-ddcb547d89b0",
+        "73f1d857-b4b6-436a-8f4f-dbdcf0e8d043",
         "0ca28e4a-aaa2-4561-a0fc-866f4065af14",
         "e78be6c7-e70d-4277-a374-fb86d748b9f0",
         "d6b04e35-d4ee-4b42-b3a3-198298788c77",

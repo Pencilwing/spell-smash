@@ -6,7 +6,8 @@
     "children": [
         "dc3541b7-f392-4e6a-be39-81ca484d1925",
         "387187fb-708e-4bfe-a087-1310e3ebb008",
-        "aaacd921-5b06-47cc-8c80-ddcb547d89b0"
+        "aaacd921-5b06-47cc-8c80-ddcb547d89b0",
+        "73f1d857-b4b6-436a-8f4f-dbdcf0e8d043"
     ],
     "filterType": "GMScript",
     "folderName": "god",
