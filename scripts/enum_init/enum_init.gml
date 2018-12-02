@@ -16,7 +16,8 @@ enum states {
     dead,
 	waveDash,
 	jumpSquat,
-    recovery
+    recovery,
+	hitstop
 }
 
 

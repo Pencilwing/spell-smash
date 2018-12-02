@@ -42,12 +42,17 @@ switch(currentState){
 }
 
 //hit
-if(hit && !shielded && !invincible){
-    squash_stretch(1.5,1.5);      
-    god.shakeDur = 5;
-	god.shake  = true;
-	god.freezeDur = hitBy.hitStun/5;
+if(hit && !shielded && !invincible){   
+	//Visual Hit Effects
+	squash_stretch(1.5,1.5);
+	instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)
+	show_debug_message("hey")
+	smashHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oSmashHitFX_1)
+	smashHit.image_angle = -hitBy.kbAng -90;
+	//HitStop
+	god.freezeDur = hitBy.damage/3 + 1;
 	god.freeze = true;
+	//Knockback and Hitstun calculation and application
     y --;
 	var vectorArray = vectorCalc(knockbackCalc(percentage,hitBy.damage,weight,hitBy.growth,hitBy.kbStr,1),hitBy.kbAng)
     xSpeed = vectorArray [1]
@@ -59,7 +64,7 @@ if(hit && !shielded && !invincible){
 			}
 	percentage = percentage + hitBy.damage;
     depth  = hitBy.depth;
-    hitStun = hitBy.kbStr;
+    hitStun = hitBy.kbStr*2;
     currentState = states.hitstun;
     hit = false;
 }

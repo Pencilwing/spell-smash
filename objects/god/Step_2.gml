@@ -24,7 +24,6 @@ if(freeze){
     gameSpeed = 0;
     freezeDur --;
     if(freezeDur <= 0){
-        freezeDur = 5;
         gameSpeed = 1;
         freeze = false;
     }

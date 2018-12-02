@@ -29,7 +29,7 @@ switch(subState){
 	
 	case attacks.down_light:
         if(frame_check(4,0)){
-            hitbox_create(30*facing,-50,150*facing,50,4,5,0*facing,20,10,1,0);
+            hitbox_create(30*facing,-50,150*facing,50,4,5,15*facing,20,10,1,0);
 		}
     break;
 }

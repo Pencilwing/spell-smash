@@ -4,10 +4,12 @@
     "mvc": "1.1",
     "name": "7281998f-a5aa-464e-a7f5-71a48c769331",
     "children": [
-        "891c95c4-6e0e-4a0a-a220-099d88cf3aef"
+        "891c95c4-6e0e-4a0a-a220-099d88cf3aef",
+        "a1456e3d-780a-44d0-a2dc-6ac726aaf76f",
+        "c40b5a1a-768e-4c81-bad7-2fe629c1bf60"
     ],
     "filterType": "GMSprite",
-    "folderName": "global_effects",
+    "folderName": "globalVFX",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
