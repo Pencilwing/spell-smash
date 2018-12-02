@@ -50,7 +50,7 @@ if(hit && !shielded && !invincible){
 	smashHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oSmashHitFX_1)
 	smashHit.image_angle = -hitBy.kbAng -90;
 	//Sound Hit Effects
-	
+	play_soundFX(lightHit_02, 1, false)
 	//HitStop
 	god.freezeDur = hitBy.damage/3 + 1;
 	god.freeze = true;

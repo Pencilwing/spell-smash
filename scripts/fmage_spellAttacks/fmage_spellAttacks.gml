@@ -40,6 +40,7 @@ switch(subState){
 			yDirection = -1;
 			}
 			upB=true;
+			play_soundFX(firefox_01, 1, false)
 			xSpeed = xDirection;
 			ySpeed = yDirection;
 			if(xDirection == 0 || yDirection == 0){
