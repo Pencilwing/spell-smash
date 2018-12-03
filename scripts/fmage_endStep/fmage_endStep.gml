@@ -45,7 +45,8 @@ switch(currentState){
 if(hit && !shielded && !invincible){   
 	//Visual Hit Effects
 	squash_stretch(1.5,1.5);
-	instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)
+	starHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)
+	starHit.image_angle = -hitBy.kbAng -90;
 	show_debug_message("hey")
 	smashHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oSmashHitFX_1)
 	smashHit.image_angle = -hitBy.kbAng -90;

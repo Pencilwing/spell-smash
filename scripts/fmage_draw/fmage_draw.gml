@@ -18,7 +18,7 @@ if(player==0){
 						
 }else{
 	draw_sprite_ext(sprite,currentFrame,xPos,yPos,xScale * facing,yScale,angle,c_white,1);
-	draw_sprite_ext(sprite,currentFrame,xPos,yPos,xScale * facing,yScale,angle,c_red,0.3);
+	draw_sprite_ext(sprite,currentFrame,xPos,yPos,xScale * facing,yScale,angle,c_blue,0.5);
 	for (var i = 0; i < stocks; i += 1){
 		draw_sprite(sprStocks,0,camera_get_view_x(view_camera[0]) + p2StocksPos,
 								camera_get_view_y (view_camera[0]) + 100);
