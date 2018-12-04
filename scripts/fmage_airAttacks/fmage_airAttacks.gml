@@ -18,17 +18,18 @@ switch(subState){
 			
 		    sideBDash = true;
 			}
-			if(sideBDash){
-				xSpeed = lerp(xSpeed,0,0.08);
+		if(sideBDash){
+				xSpeed = lerp(xSpeed,0,0.08*god.gameSpeed);
 				gSpeed = gSpeedDefault;
 			}
 			
     break;
 	
 	case attacks.back_air:
+		show_debug_message(fractionFrame)
         if(frame_check(15,0)){
             hitbox_create(-280*facing,0,150*facing,100,15,15,-135*facing,20,10,1,0);
-						xSpeed = 0;
+			xSpeed = 0;
 			ySpeed = 0;
 			y = y - 2
 			gSpeed = 0;
@@ -37,8 +38,9 @@ switch(subState){
 			
 		    sideBDash = true;
 			}
-			if(sideBDash){
-				xSpeed = lerp(xSpeed,0,0.08);
+			
+		if(sideBDash){
+				xSpeed = lerp(xSpeed,0,0.08*god.gameSpeed);
 				gSpeed = gSpeedDefault;
 			}
     break;

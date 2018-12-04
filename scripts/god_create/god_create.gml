@@ -6,7 +6,8 @@ shakeDur = 5; //how long the shake lasts
 shakeForce = 0.5;
 
 //freeze/hitstop
-gameSpeed = 1; //used for hitstop/freeze
+gameSpeed = 1; //used for hitstop/freeze, slowmo
+gameSpeedDefeault = gameSpeed; //same
 freeze = false; //freeze true or false
 freezeDur = 5; //how long the freeze lasts
 

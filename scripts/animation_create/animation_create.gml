@@ -4,6 +4,7 @@ idleSprite = sprite_index; //default idle sprite
 frameSpeed    = 1; //animation speed
 frameCounter  = 0; //counts frame duration
 currentFrame  = 0; //current frame being displayed
+fractionFrame = 0; //fraction of frame, used for slowmo
 frameDuration = 0; //time to display each sprite frame
 maxFrames     = 0; //total number of frames in current sprite
 frameData     = 0; //frame data list 

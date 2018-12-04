@@ -11,8 +11,10 @@ if(keyboard_check_pressed(vk_escape)){
 
 if(keyboard_check_pressed(vk_space) && gameSpeed = 1){
     gameSpeed = 0.2;
+	gameSpeedDefeault = gameSpeed;
 }else if(keyboard_check_pressed(vk_space) && gameSpeed != 1){
     gameSpeed = 1;
+	gameSpeedDefeault = gameSpeed;
 }
 
 
