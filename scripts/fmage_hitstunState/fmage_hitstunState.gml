@@ -4,16 +4,16 @@ if(!hitstopState)
 {
 	hitstopState = true
 	xWiggle = x
-	yWiggle = y
+	//yWiggle = y
 }else{
 x = xWiggle + random_range(-10, 10);
-y = yWiggle + random_range(-1, -20);
+//y = yWiggle + random_range(-1, -20);
 }
 
 if(god.freezeDur <= 0)
 {
 x = xWiggle
-y = yWiggle
+//y = yWiggle
 hitstopState = false;
 //slow horizontal speed
 if(onGround){

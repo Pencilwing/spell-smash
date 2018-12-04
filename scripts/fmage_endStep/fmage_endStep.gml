@@ -44,7 +44,7 @@ switch(currentState){
 //hit
 if(hit && !shielded && !invincible){   
 	//Visual Hit Effects
-	squash_stretch(1.5,1.5);
+	squash_stretch(1.2,1.2);
 	starHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)
 	starHit.image_angle = -hitBy.kbAng -90;
 	show_debug_message("hey")
@@ -53,7 +53,7 @@ if(hit && !shielded && !invincible){
 	//Sound Hit Effects
 	play_soundFX(lightHit_02, 1, false)
 	//HitStop
-	god.freezeDur = hitBy.damage/3 + 1;
+	god.freezeDur = (hitBy.damage/3 + 1);
 	god.freeze = true;
 	//Knockback and Hitstun calculation and application
     y --;

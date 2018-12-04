@@ -1,9 +1,32 @@
 //create hitboxes based on specific frames during the attack
 switch(subState){    
     case attacks.neutral_spell:
-		if(frame_check(1,0)){
-			
+		if(frame_check(2,0)){
+			subState = attacks.charge_neutral_spell;
+			charge = 5
 		}	
+	break;	
+	
+	case attacks.charge_neutral_spell:
+		charge = charge + 0.1;
+		if(frame_check(130,0)){
+			fireball = instance_create(x+180*facing,y-140, oMaxFireball)
+			fireball.facing = facing
+			fireball.image_xscale = facing
+			fireball.owner = id;
+			subState = attacks.shoot_neutral_spell;	
+		}
+	
+	if(spell && !spellHold)
+		{
+			fireball = instance_create(x+180*facing,y-140, oChargingFireball)
+			fireball.facing = facing
+			fireball.image_xscale = facing
+			fireball.charge = charge
+			fireball.owner = id;
+			subState = attacks.shoot_neutral_spell;
+		}
+	
     break;
 	
 	

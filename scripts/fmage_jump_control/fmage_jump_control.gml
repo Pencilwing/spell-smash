@@ -4,9 +4,14 @@
 }*/
 
 //hangtime
+
 if(jumpHold && abs(ySpeed) < 1){
     gSpeed = gSpeedDefault * 0.50;
 }else{
     gSpeed = gSpeedDefault;
 }
 
+
+if(!onGround && ySpeed >= -5 && down && !downHold){
+	ySpeed = ySpeed +30;
+}

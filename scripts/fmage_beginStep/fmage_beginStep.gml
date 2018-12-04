@@ -17,15 +17,18 @@ fmage_speed_control();
 
 /// death & respawn
 if(place_meeting(x,y,parentBounds)){
+	state_reset();
 	knockoutFXvar = instance_create(x, y, oKnockoutFX)
-	knockoutFXvar.image_angle = angleCalc(self, camControl)-90
+	knockoutFXvar.image_angle = (point_direction(x,y,camControl.x,camControl.y+100)-90);
 	countRespawn = true;
 	god.shakeDur = 10;
 	god.shake= true;
 	stocks--;
 	x = -10000;
+	xSpeed = 0;
+	ySpeed = 0;
+	gSpeed = 0
 	percentage = 0;
-	state_reset();
 	dead = true;
 	play_soundFX(screamKO_01, 1, false)
 	play_soundFX(KO_FX_01, 0.5, false)
@@ -40,6 +43,7 @@ if(countRespawn){
 		countRespawn = false;
 		dead = false;
 		respawnTimer = 0;
+		state_reset();
 		x = initialX;
 		y = initialY;
 		if(player==0) facing =1 else facing = -1;

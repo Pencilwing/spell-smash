@@ -3,8 +3,8 @@ xPos = x;
 yPos = y;
 
 //make sure x and y scale is always trying to reset to 1
-xScale = approach(xScale,1,0.05);
-yScale = approach(yScale,1,0.05);
+xScale = approach(xScale,1,0.05*god.gameSpeed);
+yScale = approach(yScale,1,0.05*god.gameSpeed);
 
 //store current sprite information
 currentSprite = sprite;
@@ -144,6 +144,14 @@ switch(currentState){
 			
 			case attacks.neutral_spell:
                 animation_set(fd_fmage_spell_neutral,spr_fireMage_neutralSpell);
+            break;
+			
+			case attacks.charge_neutral_spell:
+                animation_set(fd_fmage_spell_neutral_charge,spr_fireMage_neutralSpellCharge);
+            break;
+			
+			case attacks.shoot_neutral_spell:
+                animation_set(fd_fmage_spell_neutral_shoot,spr_fireMage_neutralSpellShoot);
             break;
 			
 			case attacks.side_spell:

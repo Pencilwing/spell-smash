@@ -48,14 +48,16 @@ subState     = states.idle;
 dead = false;
 
 //movement
-mSpeed = 3 * global.sizeMultiplier;
-mSpeedDefault = mSpeed;
-aSpeed = 0.5* global.sizeMultiplier;
-aSpeedDefault = aSpeed;
-cSpeed = 1 * global.sizeMultiplier;
-tSpeed = 50 * global.sizeMultiplier;
-shPower = -2.25 * global.sizeMultiplier;
-jPower = -4.5 * global.sizeMultiplier;
+mSpeed = 3 * global.sizeMultiplier; //movement speed
+mSpeedDefault = mSpeed;             //movement speed default
+aSpeed = 0.5* global.sizeMultiplier;//acceleration speed
+aSpeedDefault = aSpeed;				//accel speed default
+airSpeed = 0.25* global.sizeMultiplier;//air acceleration speed
+airSpeedDefault = airSpeed;				//air accel speed default
+cSpeed = 1 * global.sizeMultiplier; //no idea
+tSpeed = 50 * global.sizeMultiplier;//terminal speed
+shPower = -2.25 * global.sizeMultiplier;//short hop power
+jPower = -4.5 * global.sizeMultiplier;  //jump power
 facing = 1;
 doubleJump = false
 jumping = false

@@ -19,15 +19,15 @@ switch(subState){
     break;
 	
 	case attacks.side_light:
-        if(frame_check(1,0)){
-            hitbox_create(100*facing,-200,50*facing,200,15,5,70*facing,20,10,1,0);
+        if(frame_check(4,0)){
+            hitbox_create(100*facing,-200,50*facing,200,4,5,70*facing,20,10,1,0);
 			play_soundFX(shortFire_03, 1, false)
 		}
     break;
 	
 	case attacks.up_light:
         if(frame_check(6,0)){
-            hitbox_create(-150*facing,-250,250*facing,150,7,5,0*facing,20,10,1.1,0);
+            hitbox_create(-150*facing,-250,250*facing,150,7,5,0*facing,20,10,1.5,0);
 			play_soundFX(mediumFire_01, 1, false)
 		}
     break;

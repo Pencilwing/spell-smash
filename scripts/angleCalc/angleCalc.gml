@@ -6,4 +6,4 @@
 xT = (argument0.x - argument1.x)
 yT = (argument0.y - argument1.y)
 
-return darctan((yT*sign(yT))/xT*sign(xT))
+return darctan((abs(yT))/abs(xT))

@@ -9,9 +9,12 @@ if(keyboard_check_pressed(vk_escape)){
     game_end();
 }
 
-/*if(keyboard_check_pressed(vk_space)){
-    camLock = !camLock;
-}*/
+if(keyboard_check_pressed(vk_space) && gameSpeed = 1){
+    gameSpeed = 0.2;
+}else if(keyboard_check_pressed(vk_space) && gameSpeed != 1){
+    gameSpeed = 1;
+}
+
 
 if(keyboard_check_pressed(vk_backspace)) room_restart();
 

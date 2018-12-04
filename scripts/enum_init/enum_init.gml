@@ -36,6 +36,8 @@ enum attacks {
 	up_heavy,
 	down_heavy,
 	neutral_spell,
+	charge_neutral_spell,
+	shoot_neutral_spell,
 	side_spell,
 	up_spell,
 	down_spell

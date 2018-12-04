@@ -7,14 +7,18 @@ hitstunState = false;
 
 
 //move left and right
-if(left){
+if(left && !onGround){
+    xSpeed = approach(xSpeed,-mSpeed,airSpeed * god.gameSpeed);
+}else if(right && !onGround){
+    xSpeed = approach(xSpeed,mSpeed,airSpeed * god.gameSpeed);
+}else if(left){
     xSpeed = approach(xSpeed,-mSpeed,aSpeed * god.gameSpeed);
 }else if(right){
     xSpeed = approach(xSpeed,mSpeed,aSpeed * god.gameSpeed);
 }else if (onGround){
-    xSpeed = approach(xSpeed,0,1);
+    xSpeed = approach(xSpeed,0,1*god.gameSpeed);
 }else{
-	xSpeed = approach(xSpeed,0,0.1)	
+	xSpeed = approach(xSpeed,0,0.1*god.gameSpeed)	
 }
 
 //jump if you are on the ground and not holding the jump button

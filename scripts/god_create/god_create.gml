@@ -15,8 +15,8 @@ showBox = false; //used to show hitboxes
 
 //music
 if(!audio_is_playing(backGroundMusic))
-{	
+{	/*
 audio_play_sound(backGroundMusic,1,true);
 audio_sound_gain(backGroundMusic, 0, 0);
-audio_sound_gain(backGroundMusic, 0.1, 5000);
+audio_sound_gain(backGroundMusic, 0.1, 5000);*/
 }
