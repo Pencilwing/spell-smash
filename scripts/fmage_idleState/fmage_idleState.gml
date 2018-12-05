@@ -16,7 +16,7 @@ if(left && !onGround){
 }else if(right){
     xSpeed = approach(xSpeed,mSpeed,aSpeed * god.gameSpeed);
 }else if (onGround){
-    xSpeed = approach(xSpeed,0,1*god.gameSpeed);
+    xSpeed = approach(xSpeed,0,2*god.gameSpeed);
 }else{
 	xSpeed = approach(xSpeed,0,0.1*god.gameSpeed)	
 }
@@ -68,39 +68,35 @@ if(attack && !attackHold){
     //grounded attacks
     if(onGround){
         if(up){
-            subState = attacks.up_light;
-            squash_stretch(0.7,1.3);
+            uLightCmd = true;
         }else if(down){
-            subState = attacks.down_light;
-            squash_stretch(0.7,1.3);
+            dLightCmd = true;
         }else if(left || right){
-            subState = attacks.side_light;
-            squash_stretch(1.3,0.7);
+            fLightCmd = true;
         }else{
-			subState = attacks.neutral_light;
-			squash_stretch(1.3,0.7);
+			nLightCmd = true
 		}
 		    currentState = states.attack;
 			frame_reset();
+			//check Commands
+			fmage_commands();
     }else{
         //air attacks
         if(up){
-            subState = attacks.up_air;
-            squash_stretch(0.7,1.3);
+            uAerialCmd = true;
         }else if(down){
-            subState = attacks.down_air;
-            squash_stretch(0.7,1.3);
+            dAerialCmd = true;
         }else if(right && facing == 1 || left && facing == -1){
-            subState = attacks.front_air;
-            squash_stretch(1.3,0.7);
+            fAerialCmd = true;
         }else if(right && facing == -1 || left && facing == 1){
-			subState = attacks.back_air;
-            squash_stretch(1.3,0.7);
+			bAerialCmd = true;
 		}else{
-			subState = attacks.neutral_air;
+			nAerialCmd = true;
 		}
 		    currentState = states.attack;
 			frame_reset();
+			//check Commands
+			fmage_commands();
     }
 
 }
@@ -109,35 +105,30 @@ if(attack && !attackHold){
 if(heavy && !heavyHold){
 	if(onGround){
         if(up){
-            subState = attacks.up_heavy;
-            squash_stretch(0.7,1.3);
+            uHeavyCmd = true;
         }else if(down){
-            subState = attacks.down_heavy;
-            squash_stretch(0.7,1.3);
+            dHeavyCmd = true;
 		}else{
-            subState = attacks.side_heavy;
-            squash_stretch(1.3,0.7);
+            fHeavyCmd = true;
 		}
 	}else{
 		if(up){
-            subState = attacks.up_air;
-            squash_stretch(0.7,1.3);
+            uAerialCmd = true;
         }else if(down){
-            subState = attacks.down_air;
-            squash_stretch(0.7,1.3);
+            dAerialCmd = true;
         }else if(right && facing == 1 || left && facing == -1){
-            subState = attacks.front_air;
-            squash_stretch(1.3,0.7);
+            fAerialCmd = true;
         }else if(right && facing == -1 || left && facing == 1){
-			subState = attacks.back_air;
-            squash_stretch(1.3,0.7);
+			bAerialCmd = true;
 		}else{
-			subState = attacks.neutral_air;
+			nAerialCmd = true;
 		}
 	}
 	
 	currentState = states.attack;
     frame_reset();
+	//check Commands
+	fmage_commands();
 }
 
 
@@ -146,38 +137,34 @@ if(spell && !spellHold){
     //grounded attacks
     if(onGround){
         if(up){
-            subState = attacks.up_spell;
-            squash_stretch(0.7,1.3);
+            uSpellCmd = true;
         }else if(down){
-            subState = attacks.down_spell;
-            squash_stretch(0.7,1.3);
+            dSpellCmd = true;
         }else if(right || left){
-            subState = attacks.side_spell;
-            squash_stretch(1.3,0.7);
+            fSpellCmd = true;
         }else{
-			subState = attacks.neutral_spell;
-			squash_stretch(1.3,0.7);
+			nSpellCmd = true;
 		}
     }else{
         //air attacks
         if(up){
-            subState = attacks.up_spell;
-            squash_stretch(0.7,1.3);
+            uSpellAirCmd = true;
         }else if(down){
-            subState = attacks.down_spell;
-            squash_stretch(0.7,1.3);
+            dSpellAirCmd = true;
         }else if(right){
 			facing = 1;
-            subState = attacks.side_spell;
+            fSpellAirCmd = true;
         }else if(left){
 			facing = -1;
-            subState = attacks.side_spell;
+            fSpellAirCmd = true;
 		}else{
-			subState = attacks.neutral_spell;
+			nSpellAirCmd = true;
 		}
     }
     currentState = states.attack;
     frame_reset();
+	//check Commands
+	fmage_commands();
 }
 
 //dash

@@ -1,6 +1,7 @@
 //inherit code from parent
 event_inherited();
 
+
 //run code based on players current state
 switch(currentState){
     case states.idle:

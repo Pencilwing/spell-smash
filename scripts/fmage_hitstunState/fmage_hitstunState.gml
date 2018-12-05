@@ -17,7 +17,7 @@ x = xWiggle
 hitstopState = false;
 //slow horizontal speed
 if(onGround){
-    xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
+    xSpeed = approach(xSpeed,0,0.2 * god.gameSpeed);
 }else{
     xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
 }

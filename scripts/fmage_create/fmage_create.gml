@@ -107,6 +107,9 @@ fmage_frameData();
 //draw
 animation_create();
 
+//commands
+commands_init();
+
 //destroy
 destroy = false;
 countRespawn = false;
