@@ -77,7 +77,7 @@ switch(currentState){
     break;
 		 
 	 case states.rollDodge:
-        animation_set(fd_fmage_dash,spr_fireMage_rollDodge);
+        animation_set(fd_fmage_rollDodge,spr_fireMage_rollDodge);
     break;
 	
      case states.airDodge:

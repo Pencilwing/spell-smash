@@ -46,9 +46,6 @@ fmage_jump_control();
 if(shield && !shieldHold && onGround){
 		currentState = states.shield;
 		xSpeed = 0;
-		/*if(left){
-			currentState = states.dodgeRoll	
-		}*/
 	}
 	frame_reset();
 //airDodge

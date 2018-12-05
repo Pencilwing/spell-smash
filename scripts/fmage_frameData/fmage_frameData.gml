@@ -17,6 +17,7 @@ fd_fmage_hit      = frame_factory(1);
 fd_fmage_hitstun  = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//24
 fd_fmage_dead     = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//22
 fd_fmage_recovery = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//20
+fd_fmage_rollDodge= frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//34
 
 //attacks data
 //light attacks

@@ -29,7 +29,6 @@ switch(subState){
 	
 	case attacks.back_air:
 	fmage_jump_control();
-		show_debug_message(fractionFrame)
         if(frame_check(15,0)){
             hitbox_create(-280*facing,0,150*facing,100,15,15,-135*facing,20,10,1,0);
 			xSpeed = 0;

@@ -25,6 +25,10 @@ switch(currentState){
         fmage_airDodgeState();
     break;
 	
+	case states.rollDodge:
+        fmage_rollDodgeState();
+    break;
+	
 	case states.specialFall:
         fmage_specialFallState();
     break;
@@ -48,7 +52,6 @@ if(hit && !shielded && !invincible){
 	squash_stretch(1.2,1.2);
 	starHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)
 	starHit.image_angle = -hitBy.kbAng -90;
-	show_debug_message("hey")
 	smashHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oSmashHitFX_1)
 	smashHit.image_angle = -hitBy.kbAng -90;
 	//Sound Hit Effects

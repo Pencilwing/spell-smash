@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "699ce4b7-ae2f-4905-a171-d3de3c1c3d19",
+            "Value": {
+                "id": "f83ca43a-8faf-4a80-8ffb-0cb462c379f6",
+                "resourcePath": "scripts\\fmage_rollDodgeState\\fmage_rollDodgeState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6b9df10b-114b-4388-abf0-f95daedf37af",
             "Value": {
                 "id": "791ce8e8-feaa-40f5-bdff-9accbc5949e5",
@@ -2026,7 +2034,7 @@
             "Key": "c9bd58db-ced7-4538-9272-a42cba8830f8",
             "Value": {
                 "id": "5f39b2d5-ff86-450b-af6c-992310f4c575",
-                "resourcePath": "fonts\\Ringbearer\\Ringbearer.yy",
+                "resourcePath": "fonts\\Impact\\Impact.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -2526,6 +2534,7 @@
         "fee7741c-6d47-4fe2-97ae-38a79a2f0654",
         "55a95526-fffc-4fe9-ae36-8ace8824e480",
         "8c0a3727-af50-4876-a15a-d440002f1b0e",
+        "699ce4b7-ae2f-4905-a171-d3de3c1c3d19",
         "65ff9800-eed2-4a50-a63a-ab9d14f6a882",
         "18a3a0a1-56c0-4d02-a445-e83ea54215ce",
         "4368325f-2b46-40df-a9d3-9f71a77a29a1",

@@ -1,4 +1,4 @@
-//zero out ySpeed and gradually slow down the xSpeed
+//decelerate
 ySpeed = approach(ySpeed,0,0.5 * god.gameSpeed);
 xSpeed = approach(xSpeed,0,0.5 * god.gameSpeed);
 invincible = true;

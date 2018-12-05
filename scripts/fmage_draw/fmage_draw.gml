@@ -11,7 +11,7 @@ if(player==0){
 								 camera_get_view_y (view_camera[0])+950);
 		p1StocksPos += sprite_get_width(sprStocks)*1.25; 
 	}
-		draw_set_font(Ringbearer);
+		draw_set_font(Impact);
 		draw_text_outlined(camera_get_view_x(view_camera[0]) + p1StocksPos-100,
 						   camera_get_view_y (view_camera[0]) + 800,c_black, c_white, string(percentage) + "%",2)
 		//draw_text_color(camera_get_view_x(view_camera[0]) + p1StocksPos,
@@ -25,7 +25,7 @@ if(player==0){
 								camera_get_view_y (view_camera[0]) + 950);
 		p2StocksPos -= sprite_get_width(sprStocks)*1.25; 
 	}
-		draw_set_font(Ringbearer);
+		draw_set_font(Impact);
 		draw_text_outlined(camera_get_view_x(view_camera[0]) + p2StocksPos+100,
 						   camera_get_view_y (view_camera[0]) + 800,c_black, c_white, string(percentage) + "%",2)
 }
