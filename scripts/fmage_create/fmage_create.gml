@@ -62,6 +62,7 @@ facing = 1;
 doubleJump = false
 jumping = false
 jumpAnimFix = 2
+ffallSpeed = 30;
 weight = 50
 hitstunState = false
 hitstopState = false
@@ -70,7 +71,7 @@ gSpeedDefault = gSpeed;
 
 dashDur = 10;
 dashDurMax = 30;
-recoverDur = 20;
+recoverDur = 10;
 
 airDash = true;
 upB= false;
@@ -106,6 +107,8 @@ fmage_frameData();
 
 //draw
 animation_create();
+shadowVar = instance_create(0,0, oShadow)
+shadowVar.owner = id;
 
 //commands
 commands_init();

@@ -855,6 +855,14 @@
             }
         },
         {
+            "Key": "565b7469-9306-4295-bd5f-8ea345b2c9ac",
+            "Value": {
+                "id": "25b13af5-ae59-4c79-81e9-ea8b075e23eb",
+                "resourcePath": "objects\\oShadow\\oShadow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "57028ab8-c7b8-4f07-95d4-e06ffc7efaf8",
             "Value": {
                 "id": "4375099b-782f-4e81-9b9f-b3a570426ea7",
@@ -1340,6 +1348,14 @@
                 "id": "89305344-09b1-4c7b-a6de-f29b7633663d",
                 "resourcePath": "sprites\\sprSpear_Idle\\sprSpear_Idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "87cd5386-98f8-45ea-adfe-920163f62135",
+            "Value": {
+                "id": "641c094d-8821-41a1-8698-36b020fe2bec",
+                "resourcePath": "scripts\\collision_line_point\\collision_line_point.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2007,6 +2023,14 @@
             }
         },
         {
+            "Key": "c9bd58db-ced7-4538-9272-a42cba8830f8",
+            "Value": {
+                "id": "5f39b2d5-ff86-450b-af6c-992310f4c575",
+                "resourcePath": "fonts\\Ringbearer\\Ringbearer.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "cac60f21-2492-4f20-a33a-5b091b3658f0",
             "Value": {
                 "id": "4fcf3316-9c6a-4e24-9c15-3f5c8ac0dd8b",
@@ -2383,6 +2407,14 @@
             }
         },
         {
+            "Key": "f401acd5-a601-4360-b0e7-6dfa65dc5d83",
+            "Value": {
+                "id": "6ec8f82c-7ef7-4b61-8b7c-517c2a72a605",
+                "resourcePath": "sprites\\shadow\\shadow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "bfbe0fd9-7ef6-4483-b714-2d9c4b3ba45a",
@@ -2551,6 +2583,7 @@
         "bb19bb56-a22f-45bb-8374-495daebea926",
         "d0b7a0d2-c08e-46ce-913c-861cef82e63f",
         "8efd04e9-c0a6-43c7-b297-1e43d5639240",
+        "87cd5386-98f8-45ea-adfe-920163f62135",
         "dc3541b7-f392-4e6a-be39-81ca484d1925",
         "387187fb-708e-4bfe-a087-1310e3ebb008",
         "aaacd921-5b06-47cc-8c80-ddcb547d89b0",

@@ -13,5 +13,5 @@ if(jumpHold && abs(ySpeed) < 1){
 
 
 if(!onGround && ySpeed >= -5 && down && !downHold){
-	ySpeed = ySpeed +30;
+	ySpeed = ySpeed +ffallSpeed;
 }
