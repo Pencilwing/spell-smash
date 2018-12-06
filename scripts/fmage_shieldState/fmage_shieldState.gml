@@ -6,7 +6,7 @@ if(shieldHold == false){
 }
 
 	
-if(left && !leftHold || right && rightHold ){
+if(/*left && !*/leftHold || /*right && !*/rightHold ){
 	currentState = states.rollDodge;
 	xSpeed = 20*sign(xAxis);
 	ySpeed = 0;

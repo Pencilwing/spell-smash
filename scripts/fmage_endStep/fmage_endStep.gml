@@ -47,7 +47,7 @@ switch(currentState){
 }
 
 //hit
-if(hit && !shielded && !invincible){   
+if(hit && !shielded && !invincible){ 
 	//Visual Hit Effects
 	squash_stretch(1.2,1.2);
 	starHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)

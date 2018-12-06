@@ -43,7 +43,7 @@ fmage_jump_control();
 
 
 //shield and dodges
-if(shield && !shieldHold && onGround){
+if(/*shield && !*/shieldHold && onGround){
 		currentState = states.shield;
 		xSpeed = 0;
 	}
