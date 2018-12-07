@@ -6,7 +6,7 @@ invincible = true;
 //count down dashDur and reset state to normal when dashDur reaches 0
 dashDur -= 1 * god.gameSpeed;
 if(dashDur <= 0){
-    currentState = states.specialFall;
+    currentState = states.idle;
 	invincible = false;
 	hit = false;
 	gSpeed = gSpeedDefault;
@@ -16,5 +16,4 @@ if(onGround){
 	invincible = false;
 	hit = false;
 }
-
 

@@ -2,7 +2,7 @@
     "id": "891c95c4-6e0e-4a0a-a220-099d88cf3aef",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "doubleJumpFX",
+    "name": "spr_doubleJumpFX",
     "For3D": false,
     "HTile": false,
     "VTile": false,

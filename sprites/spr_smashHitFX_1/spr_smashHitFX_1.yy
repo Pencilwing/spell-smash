@@ -2,7 +2,7 @@
     "id": "c40b5a1a-768e-4c81-bad7-2fe629c1bf60",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "smashHitFX_1",
+    "name": "spr_smashHitFX_1",
     "For3D": false,
     "HTile": false,
     "VTile": false,

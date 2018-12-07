@@ -4,7 +4,7 @@ xSpeed = approach(xSpeed,0,0.5 * god.gameSpeed);
 
 if(!onGround)
 {
-	x = x-2*xSpeed;	
+	x = x-3*xSpeed;	
 	xSpeed = 0;
 }
 
@@ -24,6 +24,7 @@ hit = false;
 if(animation_end()){
 	state_reset()	
 	show_debug_message("finished rolling")
+	hit = false;
 }
 
 

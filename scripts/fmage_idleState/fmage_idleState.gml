@@ -46,8 +46,10 @@ fmage_jump_control();
 if(/*shield && !*/shieldHold && onGround){
 		currentState = states.shield;
 		xSpeed = 0;
+		shieldFacing = facing;
 	}
 	frame_reset();
+	
 //airDodge
 if(shield && !shieldHold && !onGround){
 		currentState = states.airDodge;

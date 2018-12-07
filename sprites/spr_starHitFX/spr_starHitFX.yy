@@ -2,7 +2,7 @@
     "id": "a1456e3d-780a-44d0-a2dc-6ac726aaf76f",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "starHitFX",
+    "name": "spr_starHitFX",
     "For3D": false,
     "HTile": false,
     "VTile": false,

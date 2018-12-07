@@ -109,8 +109,11 @@ fmage_frameData();
 animation_create();
 shadowVar = instance_create(0,0, oShadow)
 shadowVar.owner = id;
+offstageIndicatorId = false;
+offstageIndicator = "none";
 
 //commands
+controlsEnabled = true;
 commands_init();
 
 //destroy
@@ -118,3 +121,4 @@ destroy = false;
 countRespawn = false;
 respawnTimer = 0;
 stocks = 4;
+

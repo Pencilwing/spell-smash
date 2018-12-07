@@ -7,6 +7,8 @@ downHold  = down;
 p1Spawn.x = oPlayer1.initialX
 p1Spawn.y = oPlayer1.initialY
     
+	
+if(controlsEnabled)
 //buttons
 if(gamepad_is_connected(player)){
 	

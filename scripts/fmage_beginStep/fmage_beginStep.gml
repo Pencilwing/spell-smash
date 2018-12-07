@@ -24,10 +24,12 @@ if(place_meeting(x,y,parentBounds)){
 	god.shakeDur = 10;
 	god.shake= true;
 	stocks--;
+	controlsEnabled = false;
+	instance_destroy(offstageIndicator)
 	x = -10000;
 	xSpeed = 0;
 	ySpeed = 0;
-	gSpeed = 0
+	gSpeed = 0;
 	percentage = 0;
 	dead = true;
 	play_soundFX(screamKO_01, 1, false)
@@ -43,8 +45,11 @@ if(countRespawn){
 	if(respawnTimer >= (room_speed*2)){
 		countRespawn = false;
 		dead = false;
+		controlsEnabled = true;
 		respawnTimer = 0;
 		state_reset();
+		xSpeed = 0;
+		ySpeed = 0;
 		x = initialX;
 		y = initialY;
 		if(player==0) facing =1 else facing = -1;

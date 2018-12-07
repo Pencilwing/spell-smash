@@ -2,7 +2,7 @@
     "id": "f0335bc7-a786-4928-b2c4-30181a203a81",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprCamDebug",
+    "name": "spr_CamDebug",
     "For3D": false,
     "HTile": false,
     "VTile": false,

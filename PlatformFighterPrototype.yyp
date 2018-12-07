@@ -146,7 +146,7 @@
             "Key": "0b8ec7d5-a72b-4260-b4c1-dc74c0e6f17f",
             "Value": {
                 "id": "34048f86-9522-4a48-96b9-abeedca192a5",
-                "resourcePath": "sprites\\knockoutFX\\knockoutFX.yy",
+                "resourcePath": "sprites\\spr_knockoutFX\\spr_knockoutFX.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -267,6 +267,14 @@
             "Value": {
                 "id": "fdf8acca-03c6-4cf6-9ae7-967510859969",
                 "resourcePath": "sprites\\sprAxe_Attack_Side_A\\sprAxe_Attack_Side_A.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "19c9441a-0a77-4c7a-93b3-46adaaa09996",
+            "Value": {
+                "id": "eb7b90c9-2006-490e-aa92-fd617ba531d1",
+                "resourcePath": "sprites\\spr_OffscreenIndicator_circle\\spr_OffscreenIndicator_circle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1386,7 +1394,7 @@
             "Key": "891c95c4-6e0e-4a0a-a220-099d88cf3aef",
             "Value": {
                 "id": "8a9d6eb8-382a-4bc9-9bb0-5fc0d4c58312",
-                "resourcePath": "sprites\\doubleJumpFX\\doubleJumpFX.yy",
+                "resourcePath": "sprites\\spr_doubleJumpFX\\spr_doubleJumpFX.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1466,7 +1474,7 @@
             "Key": "917a434b-5f51-4cdb-a9ee-a203ba6d9b31",
             "Value": {
                 "id": "39965017-ec0f-4a5d-856d-1a4bf889edd6",
-                "resourcePath": "sprites\\sprStocks\\sprStocks.yy",
+                "resourcePath": "sprites\\spr_Stocks\\spr_Stocks.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1642,7 +1650,7 @@
             "Key": "a1456e3d-780a-44d0-a2dc-6ac726aaf76f",
             "Value": {
                 "id": "213a3f15-c4fe-4e82-88eb-a6f0c15dcffe",
-                "resourcePath": "sprites\\starHitFX\\starHitFX.yy",
+                "resourcePath": "sprites\\spr_starHitFX\\spr_starHitFX.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1986,7 +1994,7 @@
             "Key": "c40b5a1a-768e-4c81-bad7-2fe629c1bf60",
             "Value": {
                 "id": "94bb380d-0aa3-4d4d-ab5e-6d2eac2aa9d4",
-                "resourcePath": "sprites\\smashHitFX_1\\smashHitFX_1.yy",
+                "resourcePath": "sprites\\spr_smashHitFX_1\\spr_smashHitFX_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2370,7 +2378,7 @@
             "Key": "f0335bc7-a786-4928-b2c4-30181a203a81",
             "Value": {
                 "id": "686f9a47-6e34-45c9-8279-f6065a2c9a4b",
-                "resourcePath": "sprites\\sprCamDebug\\sprCamDebug.yy",
+                "resourcePath": "sprites\\spr_CamDebug\\spr_CamDebug.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2418,7 +2426,7 @@
             "Key": "f401acd5-a601-4360-b0e7-6dfa65dc5d83",
             "Value": {
                 "id": "6ec8f82c-7ef7-4b61-8b7c-517c2a72a605",
-                "resourcePath": "sprites\\shadow\\shadow.yy",
+                "resourcePath": "sprites\\spr_shadow\\spr_shadow.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2452,6 +2460,14 @@
                 "id": "f2edb597-996f-4f42-a8da-2f2f3b9fe9b8",
                 "resourcePath": "scripts\\box_init\\box_init.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f71347d3-9d63-4e81-95dd-eb7373deb96e",
+            "Value": {
+                "id": "12457c40-1ec4-4c1f-8b0a-243c3fb0a5d5",
+                "resourcePath": "objects\\oOffstageIndicator\\oOffstageIndicator.yy",
+                "resourceType": "GMObject"
             }
         },
         {

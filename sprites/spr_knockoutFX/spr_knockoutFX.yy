@@ -2,7 +2,7 @@
     "id": "0b8ec7d5-a72b-4260-b4c1-dc74c0e6f17f",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "knockoutFX",
+    "name": "spr_knockoutFX",
     "For3D": false,
     "HTile": false,
     "VTile": false,
