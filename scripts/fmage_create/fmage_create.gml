@@ -107,8 +107,10 @@ fmage_frameData();
 
 //draw
 animation_create();
-shadowVar = instance_create(0,0, oShadow)
-shadowVar.owner = id;
+shadowObj = instance_create(0,0, oShadow)
+shadowObj.owner = id;
+percentObj = instance_create(0,0, oPercentageIndicator)
+percentObj.owner = id;
 offstageIndicatorId = false;
 offstageIndicator = "none";
 

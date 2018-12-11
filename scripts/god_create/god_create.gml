@@ -1,5 +1,9 @@
 enum_init(); //initialize all of the state, and weapon info
 global.sizeMultiplier = 5;
+
+//match settings
+playerQnty = 2
+
 //screen shake
 shake = false; //shake true or false
 shakeDur = 5; //how long the shake lasts

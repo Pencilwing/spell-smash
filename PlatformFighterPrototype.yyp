@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "081c61b4-21de-453a-b245-f48dc0e2a45b",
+            "Value": {
+                "id": "c3aa9590-7a04-44aa-a1d9-2a2fa64d236b",
+                "resourcePath": "views\\081c61b4-21de-453a-b245-f48dc0e2a45b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0900025c-4e99-4752-b567-1d9269da2bd1",
             "Value": {
                 "id": "f2332c62-10df-4923-954a-68def9ff18d5",
@@ -668,6 +676,14 @@
                 "id": "855d474e-7991-436f-b038-498a1305e603",
                 "resourcePath": "sprites\\sprSpear_Attack_Side_A\\sprSpear_Attack_Side_A.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "45a47ed1-e3ce-4e59-a3e4-b6374314851c",
+            "Value": {
+                "id": "1620043a-b9c6-46cf-ac8e-1786414564d1",
+                "resourcePath": "scripts\\percentage_draw\\percentage_draw.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1895,6 +1911,14 @@
             }
         },
         {
+            "Key": "bb6d9128-eb12-4689-8df5-b859aa012f59",
+            "Value": {
+                "id": "3792fb50-3ad3-4331-ae4c-45a2de411a56",
+                "resourcePath": "scripts\\percentage_create\\percentage_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc22978e-53f8-4d89-9208-65dce052cea8",
             "Value": {
                 "id": "93f85807-7a58-4ee1-af5c-749384ff0bd3",
@@ -1948,6 +1972,14 @@
                 "id": "07ef847e-9925-4b70-96eb-01d70f8a2f19",
                 "resourcePath": "sounds\\shortFire_03\\shortFire_03.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c0aae34b-76aa-4a3f-93b8-bee7df3d9340",
+            "Value": {
+                "id": "950423de-1e93-400a-b836-f0cf84320900",
+                "resourcePath": "fonts\\RunicPercentage\\RunicPercentage.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -2327,6 +2359,22 @@
             }
         },
         {
+            "Key": "ead4ee5f-f374-4d18-8584-0e6cbf4b1c62",
+            "Value": {
+                "id": "f3d2183e-e216-45c2-937a-197949f6c114",
+                "resourcePath": "scripts\\percentage_step\\percentage_step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ecc76752-ac1a-4231-8625-56c62d6c9f91",
+            "Value": {
+                "id": "9fb173d8-2a5c-4a93-9c1c-88ac46d53552",
+                "resourcePath": "objects\\oPercentageIndicator\\oPercentageIndicator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ee07286c-58ed-4fab-b7b9-a119aaf86f53",
             "Value": {
                 "id": "cc22a8c1-1ae1-44e7-90a9-ebf2b8ed5084",
@@ -2468,6 +2516,14 @@
                 "id": "12457c40-1ec4-4c1f-8b0a-243c3fb0a5d5",
                 "resourcePath": "objects\\oOffstageIndicator\\oOffstageIndicator.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f76b76cb-ddaf-44c9-ba39-dfaef9406e5f",
+            "Value": {
+                "id": "7e2a4950-1edd-464e-8c18-6049af8899b9",
+                "resourcePath": "views\\f76b76cb-ddaf-44c9-ba39-dfaef9406e5f.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2630,7 +2686,10 @@
         "d873e153-a5ad-45e4-ae59-3882fe65c9b9",
         "c6c5cf28-fc1e-49eb-8595-25b0a71a76af",
         "5de01200-bb6e-451c-8079-4ee28da4e269",
-        "46111c2a-5a90-44f4-9a39-5f7f6f9025c2"
+        "46111c2a-5a90-44f4-9a39-5f7f6f9025c2",
+        "bb6d9128-eb12-4689-8df5-b859aa012f59",
+        "45a47ed1-e3ce-4e59-a3e4-b6374314851c",
+        "ead4ee5f-f374-4d18-8584-0e6cbf4b1c62"
     ],
     "tutorial": ""
 }
