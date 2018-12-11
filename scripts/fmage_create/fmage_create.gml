@@ -111,6 +111,7 @@ shadowObj = instance_create(0,0, oShadow)
 shadowObj.owner = id;
 percentObj = instance_create(0,0, oPercentageIndicator)
 percentObj.owner = id;
+percentObj.layer = layer_get_id("HUD")
 offstageIndicatorId = false;
 offstageIndicator = "none";
 

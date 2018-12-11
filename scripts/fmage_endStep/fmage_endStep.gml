@@ -76,6 +76,8 @@ if(hit && !shielded && !invincible){
     hit = false;
 }
 
+if (percentage >= 999) percentage = 999
+
 //update hitbox position
 hbox_update();
 
