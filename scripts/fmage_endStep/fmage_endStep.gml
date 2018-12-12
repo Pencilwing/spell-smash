@@ -87,3 +87,4 @@ fmage_animation();
 //destroy
 fmage_destroy();
 
+lastFrameGrounded = onGround;

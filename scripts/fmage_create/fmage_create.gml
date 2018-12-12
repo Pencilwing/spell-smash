@@ -7,9 +7,16 @@ player = 0;
 
 //stats
 percentage = 0;
+invincible = false;
+
+//Axis Related
 xAxis = 0;
 yAxis = 0;
-invincible = false;
+lastFrameXAxis = xAxis
+lastFrameYAxis = yAxis
+XsmashTap = false;
+YsmashTap = false;
+tapThreshold = 0.4;
 
 //buttons
 up    = false;
@@ -70,7 +77,7 @@ hitstopState = false
 gSpeedDefault = gSpeed;
 
 dashDur = 10;
-dashDurMax = 30;
+dashDurMax = 10;
 recoverDur = 10;
 
 airDash = true;

@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "400b10f2-fca9-4050-a4e8-3f22f9b3fc65",
+            "Value": {
+                "id": "d2ab2ad1-3bf9-46e5-8fc2-af8552e4a6aa",
+                "resourcePath": "fonts\\DDC_Hardware\\DDC_Hardware.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "4061ca61-a817-44c7-a2dd-72fb7efd373c",
             "Value": {
                 "id": "9171fd8a-f5b2-41f3-9c2f-47a07e4dba76",
@@ -2367,6 +2375,14 @@
             }
         },
         {
+            "Key": "e0198e56-5af2-4a88-b575-1742f5d06805",
+            "Value": {
+                "id": "7a5a1ef0-8ce2-4c16-be18-a0eb3457ff06",
+                "resourcePath": "scripts\\fmage_actions\\fmage_actions.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e22dadc9-b0c7-4aa4-8d31-4e653fdc6169",
             "Value": {
                 "id": "fc554a6b-7463-454d-93f4-daa89a4dff7c",
@@ -2749,6 +2765,7 @@
         "6c0cea54-391d-447b-b48c-8086290ebb7b",
         "a7dff642-a040-4cdb-a322-0a19e0f02c9d",
         "3b75f338-3fc2-48dc-a9db-c20b91eaa68e",
+        "e0198e56-5af2-4a88-b575-1742f5d06805",
         "0e4a5f41-35a3-4741-b776-a277e14a59d9",
         "1aadf24f-460f-4e70-a02e-21522f89c53b",
         "5e78ed8f-0685-41e4-b4d5-e8898e6421b9",

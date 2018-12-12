@@ -15,6 +15,9 @@ if(gamepad_is_connected(player)){
 	xAxis = gamepad_axis_value(player, gp_axislh);
 	yAxis = gamepad_axis_value(player, gp_axislv);
 	
+	xAxisR = gamepad_axis_value(player, gp_axisrh);
+	yAxisR = gamepad_axis_value(player, gp_axisrv);
+	
 	if(xAxis <= -0.4)
 	{
 	left = true
@@ -60,6 +63,32 @@ if(gamepad_is_connected(player)){
 	
 	spellHold = spell;
 	spell = gamepad_button_check(player, gp_face1);
+	
+	if(xAxisR <= -0.4 && !leftHold && !heavyHold)
+	{
+		left = true
+		right = false
+		heavy = true
+	}
+	
+	if(xAxisR >= 0.4 && !rightHold && !heavyHold)
+	{
+		right = true
+		left = false
+		heavy = true
+	}
+	
+	if(yAxisR <= -0.4 && !upHold && !heavyHold)
+	{
+		up = true
+		heavy = true
+	}
+	
+	if(yAxisR >= 0.4)
+	{
+		down = true
+		heavy = true
+	}
 	
 }else{
 	

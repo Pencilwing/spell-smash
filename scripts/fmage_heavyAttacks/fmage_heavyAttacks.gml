@@ -2,6 +2,7 @@
 switch(subState){
 	
 	case attacks.side_heavy:
+		if(!onGround) state_reset();
         if(frame_check(31,0)){
             hitbox_create(200*facing,-180,400*facing,100,15,30,60*facing,20,20,1.5,0);
 			sideHeavyFire = instance_create(x+210*facing,y-250,sideSpellFire)
@@ -11,6 +12,7 @@ switch(subState){
     break;
 	
 	case attacks.up_heavy:
+		if(!onGround) state_reset();
         if(frame_check(1,0)){
             hitbox_create(-75*facing,-350,150*facing,150,15,0*facing,-30,20,10,1,0);
 			play_soundFX(heavyFire_02, 1, false)
@@ -18,6 +20,7 @@ switch(subState){
     break;
 	
 	case attacks.down_heavy:
+		if(!onGround) state_reset();
         if(frame_check(5,0)){
             hitbox_create(-200*facing,-100,400*facing,100,2,3*facing,-20,20,10,1,0);
 			play_soundFX(mediumFire_01, 1, false)

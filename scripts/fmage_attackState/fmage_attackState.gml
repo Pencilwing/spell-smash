@@ -1,6 +1,6 @@
 //speed adjustments
 if(onGround){
-    xSpeed = approach(xSpeed,0,aSpeed * god.gameSpeed);
+    xSpeed = approach(xSpeed,0,5 * god.gameSpeed);
 }/*else{
     xSpeed = lerp(xSpeed,0,0.1);
 }*/

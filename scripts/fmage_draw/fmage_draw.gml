@@ -53,7 +53,6 @@ if((x + 20 <= Xcamera || x-20 >= XcameraR || y <= Ycamera || y-100 >= YcameraD) 
 		offstageIndicator.owner = id;
 		offstageIndicatorId = offstageIndicator.id; 
 		}
-		show_debug_message("offscreen")
 	}else{
 		if(offstageIndicator == offstageIndicatorId) instance_destroy(offstageIndicator);
 		offstageIndicator = "none"

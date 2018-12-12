@@ -23,7 +23,6 @@ hit = false;
 
 if(animation_end()){
 	state_reset()	
-	show_debug_message("finished rolling")
 	hit = false;
 }
 

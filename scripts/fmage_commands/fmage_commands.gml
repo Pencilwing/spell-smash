@@ -38,7 +38,6 @@ if(shieldCmd && !onGround){
 }
 
 
-
 //light and air attacks
     //grounded attacks
         if(uLightCmd){

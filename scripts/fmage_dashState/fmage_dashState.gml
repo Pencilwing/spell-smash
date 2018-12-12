@@ -2,6 +2,37 @@
 ySpeed = 0;
 xSpeed = approach(xSpeed,0,0.5 * god.gameSpeed);
 
+if(!onGround ){
+	if(dashDur < dashDurMax/1.25 && lastFrameGrounded)
+{
+	x = x-50*sign(xSpeed);	
+	xSpeed = 0;
+}
+	state_reset()
+}
+
+if(abs(xAxis) >= lastFrameXAxis + tapThreshold){
+	XsmashTap = true
+}else XsmashTap = false
+
+if(abs(yAxis) >= lastFrameYAxis + tapThreshold){
+	YsmashTap = true
+}else YsmashTap = false
+
+if((left || right) && XsmashTap){
+	facing = sign(xAxis)
+    dashDur = dashDurMax;
+    xSpeed = 24 * facing;
+    squash_stretch(1.3,0.7);
+    currentState = states.dash;   
+}
+
+fmage_actions();
+
+//LastFrameAxis
+lastFrameXAxis = abs(xAxis)
+lastFrameYAxis = abs(yAxis)
+
 //count down dashDur and reset state to normal when dashDur reaches 0
 dashDur -= 1 * god.gameSpeed;
 if(dashDur <= 0){

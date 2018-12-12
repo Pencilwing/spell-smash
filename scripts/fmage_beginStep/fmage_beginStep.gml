@@ -15,6 +15,8 @@ fmage_controller();
 //basic speed control for movement, etc
 fmage_speed_control();
 
+
+
 /// death & respawn
 if(place_meeting(x,y,parentBounds)){
 	state_reset();
