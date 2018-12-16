@@ -1,21 +1,19 @@
 hitstunState = true;
 
-if(!hitstopState)
-{
-	hitstopState = true
-	xWiggle = x
-	//yWiggle = y
-}else{
+if(hitstopState){
 x = xWiggle + random_range(-10, 10);
 //y = yWiggle + random_range(-1, -20);
 }
 
-if(god.freezeDur <= 0)
+if(god.freezeDur <= 0 && hitstopState)
 {
 x = xWiggle
-//y = yWiggle
+xSpeed = vectorArray [1]
+ySpeed = vectorArray [0]
 hitstopState = false;
 //slow horizontal speed
+}
+if(!hitstopState){
 if(onGround){
     xSpeed = approach(xSpeed,0,0.2 * god.gameSpeed);
 }else{
@@ -25,6 +23,7 @@ if(onGround){
 //count down your hitStun until it reaches 0
 hitStun -= 1 * god.gameSpeed;
 if(hitStun <= 0){
+	hitstunState = false;
     state_reset();
 }
 }

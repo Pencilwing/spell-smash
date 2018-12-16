@@ -57,13 +57,11 @@ if(hit && !shielded && !invincible){
 	//Sound Hit Effects
 	play_soundFX(lightHit_02, 1, false)
 	//HitStop
-	god.freezeDur = (hitBy.damage/3 + 1);
+	god.freezeDur = (hitBy.damage + 1);
 	god.freeze = true;
 	//Knockback and Hitstun calculation and application
     y --;
-	var vectorArray = vectorCalc(knockbackCalc(percentage,hitBy.damage,weight,hitBy.growth,hitBy.kbStr,1),hitBy.kbAng)
-    xSpeed = vectorArray [1]
-    ySpeed = vectorArray [0]
+	vectorArray = vectorCalc(knockbackCalc(percentage,hitBy.damage,weight,hitBy.growth,hitBy.kbStr,1),hitBy.kbAng)
     if(sign(hitBy.xHit) * -1 = 0){
 			facing = 1	
 			}else{
@@ -72,6 +70,8 @@ if(hit && !shielded && !invincible){
 	percentage = percentage + hitBy.damage;
     depth  = hitBy.depth;
     hitStun = hitBy.kbStr*2;
+	xWiggle = x
+	hitstopState = true
     currentState = states.hitstun;
     hit = false;
 }
