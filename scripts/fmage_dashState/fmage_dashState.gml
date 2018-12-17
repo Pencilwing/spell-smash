@@ -11,11 +11,11 @@ if(!onGround ){
 	state_reset()
 }
 
-if(abs(xAxis) >= lastFrameXAxis + tapThreshold){
+if((abs(xAxis) >= lastFrameXAxis + tapThreshold) && (abs(xAxis)>= 0.8)){
 	XsmashTap = true
 }else XsmashTap = false
 
-if(abs(yAxis) >= lastFrameYAxis + tapThreshold){
+if((abs(yAxis) >= lastFrameYAxis + tapThreshold) && (abs(yAxis)>= 0.8)){
 	YsmashTap = true
 }else YsmashTap = false
 

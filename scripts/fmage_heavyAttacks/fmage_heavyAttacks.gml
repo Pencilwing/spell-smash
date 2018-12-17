@@ -13,8 +13,8 @@ switch(subState){
 	
 	case attacks.up_heavy:
 		if(!onGround) state_reset();
-        if(frame_check(1,0)){
-            hitbox_create(-75*facing,-350,150*facing,150,15,0*facing,-30,20,10,1,0);
+        if(frame_check(13,0)){
+            hitbox_create(-75*facing,-350,150*facing,150,4,10,10*facing,20,18,1,0);
 			play_soundFX(heavyFire_02, 1, false)
 		}
     break;
