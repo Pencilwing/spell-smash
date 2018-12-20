@@ -53,6 +53,7 @@ currentState = states.idle;
 lastState    = currentState;
 subState     = states.idle;
 dead = false;
+cancellable = false;
 
 //movement
 mSpeed = 3 * global.sizeMultiplier; //movement speed
@@ -78,11 +79,13 @@ gSpeedDefault = gSpeed;
 
 dashDur = 10;
 dashDurMax = 10;
-recoverDur = 10;
+landingLagDur = 4;
+landingLagDefault = landingLagDur;
+nextAttack = false;
 
 airDash = true;
 upB= false;
-sideBDash = false;
+impulseDash = false;
 
 initialX = x;
 initialY = y;

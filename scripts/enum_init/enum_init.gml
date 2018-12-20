@@ -23,7 +23,9 @@ enum states {
 
 enum attacks {
 	neutral_light,
-    side_light,
+    neutral_light_2,
+	neutral_light_3,
+	side_light,
     up_light,
     down_light,
 	neutral_air,

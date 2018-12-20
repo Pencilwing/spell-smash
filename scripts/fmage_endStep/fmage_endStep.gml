@@ -50,8 +50,8 @@ switch(currentState){
 if(hit && !shielded && !invincible){ 
 	//Visual Hit Effects
 	squash_stretch(1.2,1.2);
-	starHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oStarHitFX)
-	starHit.image_angle = -hitBy.kbAng -90;
+	starHit = instance_create(x + ((x - hitBy.x)/4*1) + random_range(-20, 20), (y-100) + ((y - hitBy.y)/4*1) + random_range(-20, 20),oStarHitFX)
+	starHit.image_angle = random_range(0, 360);
 	smashHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oSmashHitFX_1)
 	smashHit.image_angle = -hitBy.kbAng -90;
 	//Sound Hit Effects

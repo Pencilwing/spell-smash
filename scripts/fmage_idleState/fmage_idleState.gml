@@ -1,6 +1,6 @@
 /// @description movement
 mSpeed = mSpeedDefault;
-sideBDash = false;
+impulseDash = false;
 angle = 0;
 upB = false;
 hitstunState = false;

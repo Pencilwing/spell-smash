@@ -3,7 +3,13 @@ window_set_caption(string(fps));
 
 if(keyboard_check_pressed(ord("R"))){
     game_restart();
+	if (room = rm_titleScreen || room = rm_mainMenu) part_system_destroy(oStarMenuParticles.menuParticles);
 }
+
+if(keyboard_check_pressed(ord("F"))){
+    instance_create(0,0, oFlash);
+}
+
 
 if(keyboard_check_pressed(vk_escape)){
     game_end();

@@ -1,4 +1,4 @@
-
+onGround = check_below();
 
 //inheret code from parent
 event_inherited();

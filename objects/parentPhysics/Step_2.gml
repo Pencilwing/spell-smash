@@ -1,4 +1,3 @@
-onGround = check_below();
 
 /// @description collision
 var h, v;

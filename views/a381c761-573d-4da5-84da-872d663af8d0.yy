@@ -8,7 +8,8 @@
         "3fef472c-a026-4897-966b-6b0441ecf893",
         "938873f4-bfaf-4970-bee7-4f37be18e957",
         "7eb02e62-b1dc-40e1-a45a-ea0d314bddf7",
-        "565b7469-9306-4295-bd5f-8ea345b2c9ac"
+        "565b7469-9306-4295-bd5f-8ea345b2c9ac",
+        "480ebf8c-6e0f-4dcd-8978-07c622e381b5"
     ],
     "filterType": "GMObject",
     "folderName": "VFX",

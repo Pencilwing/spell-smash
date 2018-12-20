@@ -2,7 +2,6 @@ hitstunState = true;
 
 if(hitstopState){
 x = xWiggle + random_range(-10, 10);
-//y = yWiggle + random_range(-1, -20);
 }
 
 if(god.freezeDur <= 0 && hitstopState)

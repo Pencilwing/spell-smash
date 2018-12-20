@@ -1,3 +1,4 @@
+
 draw_text(200, 200, "FPS = " + string(fps));
 /// stays in the middle
 if(oPlayer1.dead){

@@ -11,6 +11,8 @@ if(!onGround && !doubleJump){
 		instance_create(x,y,oDoubleJumpFX)
         squash_stretch(0.7,1.3);
 		doubleJump = true;
+		frame_reset();
+		state_reset()
     }
 }
 
@@ -24,8 +26,9 @@ if(/*shield && !*/shieldHold && onGround){
 		currentState = states.shield;
 		xSpeed = 0;
 		shieldFacing = facing;
+		frame_reset();
 	}
-	frame_reset();
+	
 	
 //airDodge
 if(shield && !shieldHold && !onGround){

@@ -32,19 +32,22 @@ switch(subState){
 	
 	case attacks.side_spell:
         if(frame_check(14,0)){
-			hitbox_create(50*facing,-150,200*facing,70,3,3*facing,-5,20,5,1,0);
+			hitbox_create(50*facing,-150,200*facing,70,18,3*facing,-5,20,5,1,0);
 			xSpeed = 0;
 			ySpeed = 0;
 			y = y - 2
 			gSpeed = 0;
-			xSpeed = 20*facing
+			xSpeed = 30*facing
 		}
         if(frame_check(33,0)){
-			sideBDash = true;
+			impulseDash = true;
 		}
-		if(sideBDash){
-			xSpeed = lerp(xSpeed,0,0.1);
+		if(impulseDash){
+			xSpeed = lerp(xSpeed,0,0.2);
 			gSpeed = gSpeedDefault;
+		}
+		if(frame_check(42,0)){
+			cancellable = true
 		}
     break;
 	
@@ -56,7 +59,7 @@ switch(subState){
 			ySpeed = 0;
 			gSpeed = 0;
 					}
-		 if(frame_check(43,0)){
+		 if(frame_check(42,0)){
 			xDirection = xAxis;
 			yDirection = yAxis;
 			if(xAxis = 0 && yAxis = 0){
@@ -83,8 +86,9 @@ switch(subState){
 			hitbox_create(-35*facing,0,70*facing,200,40,3*facing,-5,20,5, 1, angle);
 		 }
 		if(upB){			
-			xSpeed = 15*xDirection
-			ySpeed = 15*yDirection
+			force = vectorCalc(15, ((point_direction(0,0,xDirection,yDirection))+90))
+			xSpeed = force[0]
+			ySpeed = force[1]
 			}
 		
     break;

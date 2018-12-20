@@ -20,6 +20,8 @@ if(onGround){
     landed = false;
 }
 
+onGround = check_below();
+
 //change sprites and animations based on current state
 switch(currentState){
     case states.idle:
@@ -43,7 +45,7 @@ switch(currentState){
         //in air animation
         }else{
             
-            if(ySpeed < 1){
+            if(ySpeed <= 0){
 				animation_set(fd_fmage_jump,spr_fireMage_jump);
 				jumping = false;
             }else{
@@ -95,7 +97,15 @@ switch(currentState){
     case states.attack:
         switch(subState){
 			case attacks.neutral_light:
-                animation_set(fd_fmage_light_neutral,spr_fireMage_jab);
+                animation_set(fd_fmage_light_neutral,spr_fireMage_jab1);
+            break;
+			
+			case attacks.neutral_light_2:
+                animation_set(fd_fmage_light_neutral,spr_fireMage_jab2);
+            break;
+			
+			case attacks.neutral_light_3:
+                animation_set(fd_fmage_light_neutral,spr_fireMage_jab3);
             break;
 			
 			case attacks.side_light:

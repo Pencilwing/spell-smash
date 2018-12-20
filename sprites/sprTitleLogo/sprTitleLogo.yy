@@ -7,8 +7,8 @@
     "HTile": false,
     "VTile": false,
     "bbox_bottom": 829,
-    "bbox_left": 0,
-    "bbox_right": 1919,
+    "bbox_left": 336,
+    "bbox_right": 1557,
     "bbox_top": 292,
     "bboxmode": 0,
     "colkind": 1,
@@ -16,24 +16,24 @@
     "edgeFiltering": false,
     "frames": [
         {
-            "id": "e09cd4f3-ed17-483a-8236-3faf2b8c7f0b",
+            "id": "bf7e0618-c847-4f68-85c1-3662ec92fa58",
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "f4a022d4-3faa-4a10-9c90-e16fb8037288",
             "compositeImage": {
-                "id": "56b6a241-7910-4a2e-a367-907ffa3ccf44",
+                "id": "226388bf-66c6-4cfd-8ec7-4d32b5cc5089",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
-                "FrameId": "e09cd4f3-ed17-483a-8236-3faf2b8c7f0b",
+                "FrameId": "bf7e0618-c847-4f68-85c1-3662ec92fa58",
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
-                    "id": "5a60b866-2be1-4f63-8592-b8944cf73683",
+                    "id": "229eaac5-ca65-4c53-9c0c-85c28d0461b9",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
-                    "FrameId": "e09cd4f3-ed17-483a-8236-3faf2b8c7f0b",
-                    "LayerId": "c4695d1a-c385-48d8-9a98-0fcf670bbbb3"
+                    "FrameId": "bf7e0618-c847-4f68-85c1-3662ec92fa58",
+                    "LayerId": "e787d765-618f-4187-87c1-2203908e7d67"
                 }
             ]
         }
@@ -43,7 +43,7 @@
     "height": 1080,
     "layers": [
         {
-            "id": "c4695d1a-c385-48d8-9a98-0fcf670bbbb3",
+            "id": "e787d765-618f-4187-87c1-2203908e7d67",
             "modelName": "GMImageLayer",
             "mvc": "1.0",
             "SpriteId": "f4a022d4-3faa-4a10-9c90-e16fb8037288",
@@ -56,7 +56,7 @@
     ],
     "origin": 0,
     "originLocked": false,
-    "playbackSpeed": 15,
+    "playbackSpeed": 60,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
     "sepmasks": false,

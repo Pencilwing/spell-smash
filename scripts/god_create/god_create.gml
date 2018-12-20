@@ -18,6 +18,7 @@ freezeDur = 5; //how long the freeze lasts
 //debug
 showBox = false; //used to show hitboxes
 
+
 //music
 if(!audio_is_playing(backGroundMusic))
 {	/*

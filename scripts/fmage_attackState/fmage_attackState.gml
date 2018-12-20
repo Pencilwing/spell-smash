@@ -21,6 +21,12 @@ if(dur > 0){
     dur = 0;
 }
 
+if(cancellable)
+{
+	landingLagDur = landingLagDefault;
+	fmage_actions();
+}
+
 //reset to normal state when the attack animation ends
 if(animation_end()){
 	if(upB){

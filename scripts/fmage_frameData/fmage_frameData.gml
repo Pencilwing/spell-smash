@@ -21,7 +21,7 @@ fd_fmage_rollDodge= frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 
 //attacks data
 //light attacks
-fd_fmage_light_neutral = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);
+fd_fmage_light_neutral = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//20
 fd_fmage_light_side    = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//20
 fd_fmage_light_up      = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//40
 fd_fmage_light_down    = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//15
