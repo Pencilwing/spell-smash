@@ -3,7 +3,7 @@ switch(subState){
     case attacks.neutral_air:
 	fmage_jump_control();
 		if(frame_check(3,0)){
-            hitbox_create(-75*facing,-220,150*facing,150,26,10,60*facing,20,5,1,0);
+            hitbox_create(-75*facing,-220,150*facing,150,26,5,60*facing,20,13,1.5,0);
         }
     break;
 	
@@ -11,7 +11,7 @@ switch(subState){
 	fmage_jump_control();
         if(frame_check(15,0)){
 			landingLagDur = 12
-            hitbox_create(120*facing,0,150*facing,100,15,15,135*facing,20,10,1,0);
+            hitbox_create(120*facing,0,150*facing,100,15,9,135*facing,20,14,1.8,0);
 			xSpeed = 0;
 			ySpeed = 0;
 			y = y - 2
@@ -33,7 +33,7 @@ switch(subState){
 	fmage_jump_control();
         if(frame_check(15,0)){
 			landingLagDur = 12
-            hitbox_create(-280*facing,0,150*facing,100,15,15,-135*facing,20,10,1,0);
+            hitbox_create(-280*facing,0,150*facing,100,15,9,-135*facing,20,14,1.8,0);
 			xSpeed = 0;
 			ySpeed = 0;
 			y = y - 2
@@ -55,7 +55,7 @@ switch(subState){
 	fmage_jump_control();
         if(frame_check(15,0)){
 			landingLagDur = 7
-			hitbox_create(-60*facing,-400,120*facing,120,15,5,10,20,10,1,0);
+			hitbox_create(-60*facing,-450,120*facing,180,15,6,10*facing,20,6,1.4,0);
 			ySpeed = 0;
 			y = y - 2
 			gSpeed = 0;
@@ -76,7 +76,7 @@ switch(subState){
 	fmage_jump_control();
         if(frame_check(6,0)){
 			landingLagDur = 12
-            hitbox_create(-100*facing,0,200*facing,50,4,9,180*facing,20,10,1,0);
+            hitbox_create(-100*facing,0,200*facing,50,4,10,160*facing,20,16,1.2,0);
 		}
 		if(frame_check(42,0)){
 			cancellable = true

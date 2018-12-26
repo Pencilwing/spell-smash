@@ -5,12 +5,14 @@ if(onGround){
     }
 }
 
+//DoubleJump
 if(!onGround && !doubleJump){
     if(jump && !jumpHold){
         ySpeed = jPower;
 		instance_create(x,y,oDoubleJumpFX)
         squash_stretch(0.7,1.3);
 		doubleJump = true;
+		xSpeed = xSpeed/10;
 		frame_reset();
 		state_reset()
     }
@@ -22,7 +24,7 @@ fmage_jump_control();
 
 
 //shield and dodges
-if(/*shield && !*/shieldHold && onGround){
+if(shieldHold && onGround){
 		currentState = states.shield;
 		xSpeed = 0;
 		shieldFacing = facing;

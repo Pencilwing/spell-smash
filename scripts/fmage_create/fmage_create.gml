@@ -74,6 +74,8 @@ ffallSpeed = 30;
 weight = 50
 hitstunState = false
 hitstopState = false
+partFreq = 4
+partFreqDefault = partFreq;
 
 gSpeedDefault = gSpeed;
 

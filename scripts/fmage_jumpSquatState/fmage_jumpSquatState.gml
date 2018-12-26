@@ -18,6 +18,8 @@ if(jumping)
 	{
 		jumpAnimFix = 2;
 		jumping = false;
+		dustFX = instance_create_depth(x,y+8,-10,oJumpDust)
+		dustFX.image_xscale = facing
 		state_reset();
 	}
 }

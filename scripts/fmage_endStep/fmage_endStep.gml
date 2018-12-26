@@ -69,7 +69,7 @@ if(hit && !shielded && !invincible){
 			}
 	percentage = percentage + hitBy.damage;
     depth  = hitBy.depth;
-    hitStun = hitBy.kbStr*2;
+    hitStun = hitBy.kbStr*5;
 	xWiggle = x
 	hitstopState = true
     currentState = states.hitstun;

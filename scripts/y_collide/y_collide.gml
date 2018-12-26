@@ -1,8 +1,9 @@
 if (hitstunState){
-	if(ySpeed >= 5){
+	if(ySpeed >= 15){
 	ySpeed = ySpeed*-0.8;
 	}else{
 	ySpeed = 0
+	xSpeed = 0
 	}
 }else{
 //zero out yspeed when colliding with floor or ceiling

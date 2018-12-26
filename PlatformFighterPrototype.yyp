@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "15aa3b8d-1e17-4349-a5a9-71ce97882063",
+            "Value": {
+                "id": "92062c8a-6fc6-4032-b7a1-a32bf4e906e0",
+                "resourcePath": "objects\\oMainMenuPressButton\\oMainMenuPressButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "15d7d110-8904-46be-9d79-f918842e9c12",
             "Value": {
                 "id": "717c6815-eaaf-4003-bd91-0b2ec189bdb5",
@@ -1087,6 +1095,14 @@
             }
         },
         {
+            "Key": "55b26a48-8872-419c-b284-ea39a98b5159",
+            "Value": {
+                "id": "d305a412-5229-4d7f-b4fc-6b5ec4961b4b",
+                "resourcePath": "sprites\\spr_knockbackSmoke\\spr_knockbackSmoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "565b7469-9306-4295-bd5f-8ea345b2c9ac",
             "Value": {
                 "id": "25b13af5-ae59-4c79-81e9-ea8b075e23eb",
@@ -1271,6 +1287,14 @@
             }
         },
         {
+            "Key": "61b740d7-8be8-478f-836f-e9de23a094f3",
+            "Value": {
+                "id": "6d6581cf-6671-4e1a-b14e-ecea2025ab2c",
+                "resourcePath": "views\\61b740d7-8be8-478f-836f-e9de23a094f3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "63388bea-d537-44eb-a8e6-db957ff2d233",
             "Value": {
                 "id": "b45f4025-3f03-43c6-a320-dc208a99f25c",
@@ -1439,6 +1463,14 @@
             }
         },
         {
+            "Key": "735e3352-01b9-4431-bce0-2ac19533ff56",
+            "Value": {
+                "id": "398a4240-35d3-49cb-a622-bc41038db177",
+                "resourcePath": "objects\\oCharSelectPressButton\\oCharSelectPressButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "739e2052-d896-46d8-b394-05a4d5fbe38c",
             "Value": {
                 "id": "1c543774-f3ec-4ddf-a954-53e5858ebc8e",
@@ -1548,6 +1580,14 @@
                 "id": "c4ffdfd9-e506-4380-b8f8-82aa8001db39",
                 "resourcePath": "sprites\\sprSword_Jump\\sprSword_Jump.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7a403087-c939-45f6-a96f-23dfbb60b1bc",
+            "Value": {
+                "id": "b662fb46-a09f-4649-ab04-0aba0492f790",
+                "resourcePath": "objects\\oKnockBackSmoke\\oKnockBackSmoke.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2183,6 +2223,14 @@
             }
         },
         {
+            "Key": "a9b97d48-3b2e-4934-87d3-9a0b00c0b896",
+            "Value": {
+                "id": "09a560ad-c8e5-40dc-bed2-f253052c3371",
+                "resourcePath": "sprites\\spr_jumpDust\\spr_jumpDust.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "aaacd921-5b06-47cc-8c80-ddcb547d89b0",
             "Value": {
                 "id": "7d2cae5a-ba02-4be1-951f-dc7a39f0cbea",
@@ -2580,6 +2628,14 @@
                 "id": "66788da1-a309-4a1c-82db-359f4e555a7f",
                 "resourcePath": "scripts\\knockbackCalc\\knockbackCalc.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d1a227b2-5363-48f0-8073-bccfccedfd29",
+            "Value": {
+                "id": "5aa8e5d0-536d-47f1-8098-90141f5f2107",
+                "resourcePath": "objects\\oJumpDust\\oJumpDust.yy",
+                "resourceType": "GMObject"
             }
         },
         {

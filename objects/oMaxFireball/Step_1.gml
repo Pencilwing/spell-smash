@@ -1,6 +1,6 @@
 if(firstFrame)
 {
-	hitbox_create(-100*facing,-125,200,250,69,40, 30*facing, 20, 5, 1.1, 0)
+	hitbox_create(-100*facing,-125,200,250,69,20, 30*facing, 20, 25, 1.1, 0)
 	firstFrame = false;
 }
 
