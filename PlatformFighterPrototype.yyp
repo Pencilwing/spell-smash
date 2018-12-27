@@ -2735,6 +2735,14 @@
             }
         },
         {
+            "Key": "d9c2a8be-c939-4c20-9383-0e0cf5afadf8",
+            "Value": {
+                "id": "16a5e58c-9a3d-4e14-b362-cf90055dca7c",
+                "resourcePath": "scripts\\tdiCalc\\tdiCalc.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d9f93bfa-1630-44e9-9f33-bc35cf257b32",
             "Value": {
                 "id": "655f74c1-59b4-4235-bcef-1b1cf734a619",
@@ -3314,6 +3322,7 @@
         "d0b7a0d2-c08e-46ce-913c-861cef82e63f",
         "8efd04e9-c0a6-43c7-b297-1e43d5639240",
         "87cd5386-98f8-45ea-adfe-920163f62135",
+        "d9c2a8be-c939-4c20-9383-0e0cf5afadf8",
         "dc3541b7-f392-4e6a-be39-81ca484d1925",
         "387187fb-708e-4bfe-a087-1310e3ebb008",
         "aaacd921-5b06-47cc-8c80-ddcb547d89b0",

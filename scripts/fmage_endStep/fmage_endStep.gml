@@ -67,11 +67,14 @@ if(hit && !shielded && !invincible){
 			}else{
 			facing = sign(hitBy.xHit) * -1
 			}
-	percentage = percentage + hitBy.damage;
+	lDmg = hitBy.damage
+	lGrth = hitBy.growth
+	lStr = hitBy.kbStr
+	lAng = hitBy.kbAng
     depth  = hitBy.depth;
     hitStun = hitBy.kbStr*5;
-	xWiggle = x
-	hitstopState = true
+	xWiggle = x;
+	hitstopState = true;
     currentState = states.hitstun;
     hit = false;
 }
