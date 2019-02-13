@@ -11,7 +11,6 @@ YcameraD = Ycamera + camera_get_view_height(camera)
 
 if(player==0){
 	draw_sprite_ext(sprite,currentFrame,xPos,yPos,xScale * facing,yScale,angle,c_white,1);
-	draw_sprite_ext(sprite,currentFrame,xPos,yPos,xScale * facing,yScale,angle,c_red,0.5);
 	
 	/*for (var i = 0; i < stocks; i += 1){
 		draw_sprite(spr_Stocks,0, Xcamera + p1StocksPos,

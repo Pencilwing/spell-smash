@@ -21,7 +21,12 @@ hit = false;
 
 }
 
-if(animation_end()){
+if(animation_end() && shieldHold){
+	currentState = states.shield;	
+	hit = false;
+}
+
+if(animation_end() && !shieldHold){
 	state_reset()	
 	hit = false;
 }

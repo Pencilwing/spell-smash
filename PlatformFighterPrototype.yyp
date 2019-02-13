@@ -1759,6 +1759,14 @@
             }
         },
         {
+            "Key": "8a1dc6c8-7d48-4e86-8d6b-52c5ce323610",
+            "Value": {
+                "id": "dbc2bed4-48bc-408e-93e4-791ec707d696",
+                "resourcePath": "sprites\\spr_dashDust\\spr_dashDust.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8adccbea-c7c4-4d86-9510-1de230c3971f",
             "Value": {
                 "id": "f589d07e-3944-44db-9d54-eabaf63b7ab5",
@@ -1780,6 +1788,14 @@
                 "id": "4a3bf4c4-2600-4e39-be0c-8261b902452d",
                 "resourcePath": "scripts\\fmage_airDodgeState\\fmage_airDodgeState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8d13ffc6-e82c-4483-9666-d606fe685465",
+            "Value": {
+                "id": "ff289e31-ac94-4ab9-bdf6-7603f897e008",
+                "resourcePath": "objects\\oDashDust\\oDashDust.yy",
+                "resourceType": "GMObject"
             }
         },
         {

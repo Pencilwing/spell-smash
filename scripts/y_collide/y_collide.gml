@@ -1,5 +1,5 @@
 if (hitstunState){
-	if(ySpeed >= 15){
+	if(ySpeed >= 50){
 	ySpeed = ySpeed*-0.8;
 	}else{
 	ySpeed = 0

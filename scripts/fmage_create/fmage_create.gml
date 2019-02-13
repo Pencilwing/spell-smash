@@ -16,7 +16,7 @@ lastFrameXAxis = xAxis
 lastFrameYAxis = yAxis
 XsmashTap = false;
 YsmashTap = false;
-tapThreshold = 0.4;
+tapThreshold = 0.2;
 
 //buttons
 up    = false;
@@ -56,11 +56,11 @@ dead = false;
 cancellable = false;
 
 //movement
-mSpeed = 3 * global.sizeMultiplier; //movement speed
+mSpeed = 4 * global.sizeMultiplier; //movement speed
 mSpeedDefault = mSpeed;             //movement speed default
 aSpeed = 0.5* global.sizeMultiplier;//acceleration speed
 aSpeedDefault = aSpeed;				//accel speed default
-airSpeed = 0.25* global.sizeMultiplier;//air acceleration speed
+airSpeed = 0.15* global.sizeMultiplier;//air acceleration speed
 airSpeedDefault = airSpeed;				//air accel speed default
 cSpeed = 1 * global.sizeMultiplier; //no idea
 tSpeed = 50 * global.sizeMultiplier;//terminal speed
@@ -74,13 +74,15 @@ ffallSpeed = 30;
 weight = 50
 hitstunState = false
 hitstopState = false
+airDodgeDur = 44
 partFreq = 4
 partFreqDefault = partFreq;
+dashDur = 16;
+dashDurMax = 16;
 
 gSpeedDefault = gSpeed;
 
-dashDur = 10;
-dashDurMax = 10;
+
 landingLagDur = 4;
 landingLagDefault = landingLagDur;
 nextAttack = false;

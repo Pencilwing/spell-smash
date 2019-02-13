@@ -26,7 +26,9 @@ if(left && !onGround){
 	facing = sign(xAxis)
     dashDur = dashDurMax;
     xSpeed = 24 * facing;
-    squash_stretch(1.3,0.7);
+    //squash_stretch(1.3,0.7);
+	dustFX = instance_create(x,y,oDashDust)
+	dustFX.image_xscale = facing
     currentState = states.dash;   
 }else if(left){
     xSpeed = approach(xSpeed,-mSpeed,aSpeed * god.gameSpeed);

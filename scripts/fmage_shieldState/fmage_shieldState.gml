@@ -1,4 +1,6 @@
 shielded =true;
+xSpeed = 0;
+if(frame_check(1,0)) shieldFacing = facing;
 
 if(shieldHold == false){
 	shielded = false;
@@ -7,7 +9,7 @@ if(shieldHold == false){
 }
 
 	
-if(/*left && !*/leftHold || /*right && !*/rightHold ){
+if(left && !leftHold || right && !rightHold ){
 	currentState = states.rollDodge;
 	xSpeed = 20*sign(xAxis);
 	ySpeed = 0;

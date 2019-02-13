@@ -12,7 +12,8 @@ if(!onGround && !doubleJump){
 		instance_create(x,y,oDoubleJumpFX)
         squash_stretch(0.7,1.3);
 		doubleJump = true;
-		xSpeed = xSpeed/10;
+		if(abs(xAxis) <= .25) xSpeed = 0;
+		if(sign(xAxis) != sign(xSpeed)) xSpeed = xSpeed*-1*abs(xAxis);
 		frame_reset();
 		state_reset()
     }
@@ -26,7 +27,6 @@ fmage_jump_control();
 //shield and dodges
 if(shieldHold && onGround){
 		currentState = states.shield;
-		xSpeed = 0;
 		shieldFacing = facing;
 		frame_reset();
 	}
@@ -35,10 +35,13 @@ if(shieldHold && onGround){
 //airDodge
 if(shield && !shieldHold && !onGround){
 		currentState = states.airDodge;
-		dashDur = dashDurMax;
+		dashDur = airDodgeDur;
 		gSpeed = 0;
-        xSpeed = 22 * xAxis;
-		ySpeed = 22 * yAxis;
+		force = vectorCalc(20, ((point_direction(0,0,xAxis,yAxis))+90))
+		xSpeed = force[0]
+		ySpeed = force[1]
+        //xSpeed = 22 * xAxis;
+		//ySpeed = 22 * yAxis;
         squash_stretch(1.3,0.7);
 }
 
@@ -166,6 +169,8 @@ if(dash && !dashHold){
         dashDur = dashDurMax;
         xSpeed = 24 * facing;
         squash_stretch(1.3,0.7);
+		dustFX = instance_create(x,y,oDashDust)
+		dustFX.image_xscale = facing
         currentState = states.dash;    
     }
 }

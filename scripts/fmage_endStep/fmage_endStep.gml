@@ -72,7 +72,7 @@ if(hit && !shielded && !invincible){
 	lStr = hitBy.kbStr
 	lAng = hitBy.kbAng
     depth  = hitBy.depth;
-    hitStun = hitBy.kbStr*5;
+    hitStun = hitBy.kbStr*8;
 	xWiggle = x;
 	hitstopState = true;
     currentState = states.hitstun;

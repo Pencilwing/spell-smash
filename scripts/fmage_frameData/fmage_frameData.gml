@@ -9,7 +9,7 @@ fd_master = ds_list_create();
 
 //movement
 fd_fmage_idle     = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//32
-fd_fmage_run      = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1);//12
+fd_fmage_run      = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//20
 fd_fmage_jumpsquat= frame_factory(1,1,1,1);//4
 fd_fmage_jump     = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//18
 fd_fmage_dash     = frame_factory(1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1);//16
