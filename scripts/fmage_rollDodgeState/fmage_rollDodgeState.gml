@@ -4,8 +4,9 @@ xSpeed = approach(xSpeed,0,0.5 * god.gameSpeed);
 
 if(!onGround)
 {
-	x = x-3*xSpeed;	
-	xSpeed = 0;
+	x = x-40*sign(xSpeed);	
+	xSpeed = 0;	
+	y = y- 1
 }
 
 if(frame_check(4,0)){
@@ -24,11 +25,13 @@ hit = false;
 if(animation_end() && shieldHold){
 	currentState = states.shield;	
 	hit = false;
+	facing = facingTemp;
 }
 
 if(animation_end() && !shieldHold){
-	state_reset()	
+	state_reset()
 	hit = false;
+	facing = facingTemp;
 }
 
 

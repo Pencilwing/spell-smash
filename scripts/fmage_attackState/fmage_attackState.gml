@@ -6,7 +6,7 @@ if(onGround){
 }*/
 
 //landing recovery
-fmage_landinglag();
+if(subState!= attacks.neutral_spell && subState!= attacks.charge_neutral_spell) fmage_landinglag();
 
 //attackData
 fmage_lightAttacks();
@@ -34,6 +34,7 @@ if(animation_end()){
 	currentState = states.specialFall;
 	gSpeed = gSpeedDefault;
 	angle = 0;
+	particleActivate = false;
 	}else{
 	state_reset();  
 	}

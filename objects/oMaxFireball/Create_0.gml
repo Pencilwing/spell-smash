@@ -2,6 +2,6 @@
 
 proyectile = true;
 owner = -1;
-tSpeed = 20;
+tSpeed = 25;
 facing = 1;
 firstFrame = true;

@@ -34,10 +34,10 @@ if(place_meeting(x,y,parentBounds)){
 	gSpeed = 0;
 	percentage = 0;
 	dead = true;
-	play_soundFX(screamKO_01, 1, false)
-	play_soundFX(KO_FX_01, 0.5, false)
+	//play_soundFX(screamKO_01, 1, false)
+	//play_soundFX(KO_FX_01, 0.5, false)
 	if(stocks == 0){ 
-		play_soundFX(GAME, 1, false)
+		//play_soundFX(GAME, 1, false)
 		god.gameSpeed = 0.2;
 	}
 }

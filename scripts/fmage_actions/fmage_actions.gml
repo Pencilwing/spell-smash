@@ -13,7 +13,7 @@ if(!onGround && !doubleJump){
         squash_stretch(0.7,1.3);
 		doubleJump = true;
 		if(abs(xAxis) <= .25) xSpeed = 0;
-		if(sign(xAxis) != sign(xSpeed)) xSpeed = xSpeed*-1*abs(xAxis);
+		if(sign(xAxis) != sign(xSpeed)) xSpeed = xSpeed*-1*abs(xAxis)*0.5;
 		frame_reset();
 		state_reset()
     }
@@ -124,7 +124,7 @@ if(spell && !spellHold){
         if(up){
             uSpellCmd = true;
         }else if(down){
-            dSpellCmd = true;
+            fSpellCmd = true;
         }else if(right || left){
             fSpellCmd = true;
         }else{
@@ -135,7 +135,7 @@ if(spell && !spellHold){
         if(up){
             uSpellAirCmd = true;
         }else if(down){
-            dSpellAirCmd = true;
+            fSpellAirCmd = true;
         }else if(right){
 			facing = 1;
             fSpellAirCmd = true;
@@ -162,6 +162,7 @@ if(dash && !dashHold){
             xSpeed = 24 * facing;
             squash_stretch(1.3,0.7);
             currentState = states.dash;
+			rollable = true
             airDash = true;
         }
     //ground dash
@@ -169,8 +170,6 @@ if(dash && !dashHold){
         dashDur = dashDurMax;
         xSpeed = 24 * facing;
         squash_stretch(1.3,0.7);
-		dustFX = instance_create(x,y,oDashDust)
-		dustFX.image_xscale = facing
         currentState = states.dash;    
     }
 }

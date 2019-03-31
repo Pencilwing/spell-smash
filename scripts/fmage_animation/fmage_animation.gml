@@ -31,25 +31,25 @@ switch(currentState){
             if(!left && !right){
                 if(down){
                     //crouch
-                    animation_set(fd_fmage_idle,spr_fireMage_crouch);
+                    animation_set(fd_fmage_idle, asset_get_index("spr_fireMage_crouch"+string(player)));
                 }else{
                     //body
-                    animation_set(fd_fmage_idle,spr_fireMage_idle);
+                    animation_set(fd_fmage_idle,asset_get_index("spr_fireMage_idle"+string(player)));
                 }
             //run
             }else{if(!jumping)
 				{
-				   animation_set(fd_fmage_run,spr_fireMage_run);
+				   animation_set(fd_fmage_run,asset_get_index("spr_fireMage_run"+string(player)));
 				}		
             }
         //in air animation
         }else{
             
             if(ySpeed <= 0){
-				animation_set(fd_fmage_jump,spr_fireMage_jump);
+				animation_set(fd_fmage_jump,asset_get_index("spr_fireMage_jump"+string(player)));
 				jumping = false;
             }else{
-                animation_set(fd_fmage_jump,spr_fireMage_fall);
+                animation_set(fd_fmage_jump,asset_get_index("spr_fireMage_fall"+string(player)));
 				
         }
 		}
@@ -63,137 +63,144 @@ switch(currentState){
     break;
     
     case states.jumpSquat:
-        animation_set(fd_fmage_jumpsquat,spr_fireMage_jumpSquat);
+        animation_set(fd_fmage_jumpsquat,asset_get_index("spr_fireMage_jumpSquat"+string(player)));
     break;
 	
     case states.dash:
-        animation_set(fd_fmage_dash,spr_fireMage_dash);
+        animation_set(fd_fmage_dash,asset_get_index("spr_fireMage_dash"+string(player)));
     break;
 	
 	 case states.shield:
-        animation_set(fd_fmage_dash,spr_fireMage_shield);
+        animation_set(fd_fmage_dash,asset_get_index("spr_fireMage_shield"+string(player)));
     break;
 	
 	 case states.spotDodge:
-        animation_set(fd_fmage_dash,spr_fireMage_spotDodge);
+        animation_set(fd_fmage_dash,asset_get_index("spr_fireMage_spotDodge"+string(player)));
     break;
 		 
 	 case states.rollDodge:
-        animation_set(fd_fmage_rollDodge,spr_fireMage_rollDodge);
+        animation_set(fd_fmage_rollDodge,asset_get_index("spr_fireMage_rollDodge"+string(player)));
     break;
 	
      case states.airDodge:
-        animation_set(fd_fmage_dash,spr_fireMage_airDodge);
+        animation_set(fd_fmage_dash,asset_get_index("spr_fireMage_airDodge"+string(player)));
     break;
 	
 	 case states.specialFall:
-        animation_set(fd_fmage_dash,spr_fireMage_specialFall);
+        animation_set(fd_fmage_dash,asset_get_index("spr_fireMage_specialFall"+string(player)));
     break;
 	
     case states.dead:
-        animation_set(fd_fmage_dead,spr_fireMage_knockdown);
+        animation_set(fd_fmage_dead,asset_get_index("spr_fireMage_knockdown"+string(player)));
     break;
     
     case states.attack:
         switch(subState){
 			case attacks.neutral_light:
-                animation_set(fd_fmage_light_neutral,spr_fireMage_jab1);
+                animation_set(fd_fmage_light_neutral,asset_get_index("spr_fireMage_jab1"+string(player)));
             break;
 			
 			case attacks.neutral_light_2:
-                animation_set(fd_fmage_light_neutral,spr_fireMage_jab2);
+                animation_set(fd_fmage_light_neutral,asset_get_index("spr_fireMage_jab2"+string(player)));
             break;
 			
 			case attacks.neutral_light_3:
-                animation_set(fd_fmage_light_neutral,spr_fireMage_jab3);
+                animation_set(fd_fmage_light_neutral,asset_get_index("spr_fireMage_jab3"+string(player)));
             break;
 			
 			case attacks.side_light:
-                animation_set(fd_fmage_light_side,spr_fireMage_ftilt);
+                animation_set(fd_fmage_light_side,asset_get_index("spr_fireMage_ftilt"+string(player)));
             break;
            
             case attacks.up_light:
-                animation_set(fd_fmage_light_up,spr_fireMage_utilt);       
+                animation_set(fd_fmage_light_up,asset_get_index("spr_fireMage_utilt"+string(player)));       
             break;
             
             case attacks.down_light:
-                animation_set(fd_fmage_light_down,spr_fireMage_dtilt);      
+                animation_set(fd_fmage_light_down,asset_get_index("spr_fireMage_dtilt"+string(player)));      
             break;
 			  
 			case attacks.side_heavy:
-                animation_set(fd_fmage_heavy_side,spr_fireMage_sideStrong);
+                animation_set(fd_fmage_heavy_side,asset_get_index("spr_fireMage_sideStrong"+string(player)));
             break;
            
             case attacks.up_heavy:
-                animation_set(fd_fmage_heavy_up,spr_fireMage_upStrong);       
+                animation_set(fd_fmage_heavy_up,asset_get_index("spr_fireMage_upStrong"+string(player)));       
             break;
             
             case attacks.down_heavy:
-                animation_set(fd_fmage_heavy_down,spr_fireMage_downStrong);      
+                animation_set(fd_fmage_heavy_down,asset_get_index("spr_fireMage_downStrong"+string(player)));      
             break;
 			
             case attacks.neutral_air:
-                animation_set(fd_fmage_air_neutral,spr_fireMage_nAir);    
+                animation_set(fd_fmage_air_neutral,asset_get_index("spr_fireMage_nAir"+string(player)));    
             break;
             
             case attacks.front_air:
-                animation_set(fd_fmage_air_front,spr_fireMage_fAir);    
+                animation_set(fd_fmage_air_front,asset_get_index("spr_fireMage_fAir"+string(player)));    
             break;
              
             case attacks.back_air:
-                animation_set(fd_fmage_air_back,spr_fireMage_bAir);    
+                animation_set(fd_fmage_air_back,asset_get_index("spr_fireMage_bAir"+string(player)));    
             break;
             
             case attacks.up_air:
-                animation_set(fd_fmage_air_up,spr_fireMage_uAir);       
+                animation_set(fd_fmage_air_up,asset_get_index("spr_fireMage_uAir"+string(player)));       
             break;
             
             case attacks.down_air:
-                animation_set(fd_fmage_air_down,spr_fireMage_dAir);      
+                animation_set(fd_fmage_air_down,asset_get_index("spr_fireMage_dAir"+string(player)));      
             break;
 			
 			case attacks.neutral_spell:
-                animation_set(fd_fmage_spell_neutral,spr_fireMage_neutralSpell);
-            break;
+                if(onGround){animation_set(fd_fmage_spell_neutral,asset_get_index("spr_fireMage_neutralSpell"+string(player)));
+				}else{animation_set(fd_fmage_spell_neutral,asset_get_index("spr_fireMage_neutralSpellAir"+string(player)));
+				}
+			break;
 			
 			case attacks.charge_neutral_spell:
-                animation_set(fd_fmage_spell_neutral_charge,spr_fireMage_neutralSpellCharge);
+                if(onGround){animation_set(fd_fmage_spell_neutral_charge,asset_get_index("spr_fireMage_neutralSpellCharge"+string(player)));
+				}else{animation_set(fd_fmage_spell_neutral_charge,asset_get_index("spr_fireMage_neutralSpellChargeAir"+string(player)));
+				}
             break;
 			
 			case attacks.shoot_neutral_spell:
-                animation_set(fd_fmage_spell_neutral_shoot,spr_fireMage_neutralSpellShoot);
+                if(onGround){animation_set(fd_fmage_spell_neutral_shoot,asset_get_index("spr_fireMage_neutralSpellShoot"+string(player)));
+				}else{animation_set(fd_fmage_spell_neutral_shoot,asset_get_index("spr_fireMage_neutralSpellShootAir"+string(player)));
+				}
             break;
 			
 			case attacks.side_spell:
-                animation_set(fd_fmage_spell_side,spr_fireMage_sideSpell);
+                animation_set(fd_fmage_spell_side,asset_get_index("spr_fireMage_sideSpell"+string(player)));
             break;
            
             case attacks.up_spell:
-                animation_set(fd_fmage_spell_up,spr_fireMage_upSpell);       
+                animation_set(fd_fmage_spell_up,asset_get_index("spr_fireMage_upSpell"+string(player)));       
             break;
             
             case attacks.down_spell:
-                animation_set(fd_fmage_spell_down,spr_fireMage_downSpell);      
+                animation_set(fd_fmage_spell_down,asset_get_index("spr_fireMage_downSpell"+string(player)));      
             break;
 			  
         }
     break;
     
     case states.recovery:
-        animation_set(fd_fmage_recovery,spr_fireMage_land);
+        animation_set(fd_fmage_recovery,asset_get_index("spr_fireMage_land"+string(player)));
     break;
     
     case states.hitstun:
         //draw hit sprite during hit stop
         if(god.freeze){
-            animation_set(fd_fmage_hitstun,spr_fireMage_knockback);
+            animation_set(fd_fmage_hitstun,asset_get_index("spr_fireMage_knockback"+string(player)));
         }else{
             //laying down on the ground after being hit
             if(onGround){
-                animation_set(fd_fmage_hitstun,spr_fireMage_knockdown);
+                animation_set(fd_fmage_hitstun,asset_get_index("spr_fireMage_knockdown"+string(player)));
+				if(knockedDown)animation_set(fd_fmage_hit,asset_get_index("spr_fireMage_knockdownLoop"+string(player)));
             //flying through the air after being hit      
             }else{
-                animation_set(fd_fmage_dead,spr_fireMage_knockback);
+                animation_set(fd_fmage_dead,asset_get_index("spr_fireMage_knockback"+string(player)));
             }
         }
     break;

@@ -3,6 +3,6 @@
 charge = 10
 proyectile = true;
 owner = -1;
-tSpeed = 15;
+tSpeed = 20;
 facing = 1;
 firstFrame = true;

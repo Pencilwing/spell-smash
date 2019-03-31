@@ -3,24 +3,25 @@ hitstunState = true;
 
 
 if(hitstopState){
-x = xWiggle + random_range(-10, 10);
+	x = xWiggle + random_range(-10, 10);
+	knockedDown = false
 }
 
 if(god.freezeDur <= 0 && hitstopState)
 {
-x = xWiggle
-TDI = tdiCalc();
-vectorArray = vectorCalc(knockbackCalc(percentage,lDmg,weight,lGrth,lStr,1),lAng + TDI)
-show_debug_message(TDI)
-percentage = percentage + lDmg;
-xSpeed = vectorArray [1]
-ySpeed = vectorArray [0]
-hitstopState = false;
+	x = xWiggle
+	TDI = tdiCalc();
+	vectorArray = vectorCalc(knockbackCalc(percentage,lDmg,weight,lGrth,lStr,1),lAng + TDI)
+	percentage = percentage + lDmg;
+	xSpeed = vectorArray [1]
+	ySpeed = vectorArray [0]
+	hitstopState = false;
 //slow horizontal speed
 }
 if(!hitstopState){
 if(onGround){
     xSpeed = approach(xSpeed,0,0.2 * god.gameSpeed);
+	if(animation_end()) knockedDown = true
 }else{
     xSpeed = approach(xSpeed,0,0.1 * god.gameSpeed);
 if(abs(xSpeed) > 20 || abs(ySpeed) > 20){

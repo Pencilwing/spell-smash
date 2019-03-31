@@ -54,6 +54,7 @@ lastState    = currentState;
 subState     = states.idle;
 dead = false;
 cancellable = false;
+knockedDown = false;
 
 //movement
 mSpeed = 4 * global.sizeMultiplier; //movement speed
@@ -71,7 +72,7 @@ doubleJump = false
 jumping = false
 jumpAnimFix = 2
 ffallSpeed = 30;
-weight = 50
+weight = 400
 hitstunState = false
 hitstopState = false
 airDodgeDur = 44
@@ -79,6 +80,8 @@ partFreq = 4
 partFreqDefault = partFreq;
 dashDur = 16;
 dashDurMax = 16;
+rollable = false;
+facingTemp = 1
 
 gSpeedDefault = gSpeed;
 
@@ -90,6 +93,7 @@ nextAttack = false;
 airDash = true;
 upB= false;
 impulseDash = false;
+particleActivate = false;
 
 initialX = x;
 initialY = y;

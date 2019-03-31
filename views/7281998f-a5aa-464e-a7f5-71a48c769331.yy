@@ -12,7 +12,8 @@
         "0e75fd80-b924-4e31-8cae-18390234d9a3",
         "55b26a48-8872-419c-b284-ea39a98b5159",
         "a9b97d48-3b2e-4934-87d3-9a0b00c0b896",
-        "8a1dc6c8-7d48-4e86-8d6b-52c5ce323610"
+        "8a1dc6c8-7d48-4e86-8d6b-52c5ce323610",
+        "03a9afe1-94d2-454c-a7ce-bd486a89e3f0"
     ],
     "filterType": "GMSprite",
     "folderName": "globalVFX",

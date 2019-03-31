@@ -13,7 +13,8 @@ if(left && !leftHold || right && !rightHold ){
 	currentState = states.rollDodge;
 	xSpeed = 20*sign(xAxis);
 	ySpeed = 0;
-	if(sign(xAxis) == shieldFacing) facing = sign(xAxis)*-1;
+	if(sign(xAxis) == shieldFacing) facingTemp = sign(xAxis)*-1;
+	facing = sign(xAxis)
 	shielded = false;
 	hit = false;
 }

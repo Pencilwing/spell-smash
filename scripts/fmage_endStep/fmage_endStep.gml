@@ -55,7 +55,7 @@ if(hit && !shielded && !invincible){
 	smashHit = instance_create(x + ((x - hitBy.x)/4*1), (y-100) + ((y - hitBy.y)/4*1),oSmashHitFX_1)
 	smashHit.image_angle = -hitBy.kbAng -90;
 	//Sound Hit Effects
-	play_soundFX(lightHit_02, 1, false)
+	//play_soundFX(lightHit_02, 1, false)
 	//HitStop
 	god.freezeDur = (hitBy.damage + 1);
 	god.freeze = true;
@@ -72,11 +72,12 @@ if(hit && !shielded && !invincible){
 	lStr = hitBy.kbStr
 	lAng = hitBy.kbAng
     depth  = hitBy.depth;
-    hitStun = hitBy.kbStr*8;
+    hitStun = hitBy.kbStr*5+4;
 	xWiggle = x;
 	hitstopState = true;
     currentState = states.hitstun;
     hit = false;
+	gSpeed = gSpeedDefault
 }
 
 if (percentage >= 999) percentage = 999
